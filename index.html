@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LuozaixuanMinecraftServer - 纯净生存服务器</title>
+<style>
+/* 简单样式设置 */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header, footer {
+  background-color: #3e3e3e;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1, header h2 {
+  margin: 0;
+}
+
+main h2 {
+  margin-top: 2rem;
+}
+
+button {
+  background-color: #00A7E1;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1rem 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.secondary {
+  background-color: #777;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.centered {
+  text-align: center;
+}
+
+.server-address {
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 400px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>LuozaixuanMinecraftServer</h1>
+  <h2>纯净生存服务器</h2>
+</header>
+
+<div class="container">
+  <main>
+    <section>
+      <h2>关于 LuozaixuanMinecraftServer</h2>
+      <p>
+        LuozaixuanMinecraftServer 是一个专注于纯净生存体验的 Minecraft 服务器，我们不使用任何模组和不必要的插件，力求还原原版游戏的核心乐趣。在这里，玩家们可以享受到不受干扰的自然生存环境，体验真实的探索、采集与建设过程。
+      </p>
+      <p>
+        作为服主，Luozaixuan 致力于营造一个公平、友善、和谐的游戏社区，鼓励玩家们相互尊重、互助合作，一同在这个无垠的方块世界中留下独特的足迹。
+      </p>
+
+      <div class="centered">
+        <h3>如何加入服务器</h3>
+        <div class="server-address clearfix">
+          <span>服务器地址:</span>
+          <span>123.157.211.154:17990</span>
+        </div>
+
+        <p>
+          请确保您的 Minecraft 客户端版本为 <strong>1.20.4</strong> 或兼容此版本，然后在多人游戏菜单中输入上述服务器地址进行连接。
+        </p>
+
+        <button onclick="copyServerAddress()">复制服务器地址</button>
+        <script>
+          function copyServerAddress() {
+            // 现代浏览器中的复制功能实现，需配合相应的JS代码来实现复制功能
+            navigator.clipboard.writeText('123.157.211.154:17990');
+            alert('服务器地址已复制到剪贴板!');
+          }
+        </script>
+
+        <button class="secondary" onclick="window.open('https://minecraft.net/download')">下载 Minecraft 1.20.4</button>
+      </div>
+    </section>
+
+    <!-- 可以添加更多关于服务器规则、特色、活动等内容的章节 -->
+  </main>
+</div>
+
+<footer>
+
+  <nav>
+    <a href="/html/we.html">关于我们</a>
+    <a href="/html/rules.html">服务器规则</a>
+    <a href="/htmlcontact.html">联系我们</a>
+    <a href="/html/site5.html">模组服官网</a>
+  </nav>
+</footer>
+
+<!-- 添加必要的现代浏览器兼容性脚本以实现复制功能，此处省略 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</body>
+</html>
