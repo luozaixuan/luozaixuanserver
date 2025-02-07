@@ -6,33 +6,50 @@
 <title>LuozaixuanMinecraftServer - 服务器规则</title>
 
 <style>
-/* 共享样式设置 */
+/* 简单样式设置 */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-header, footer {
-  background-color: #3e3e3e;
-  color: #fff;
-  padding: 10px;
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 2rem 0;
   text-align: center;
 }
 
-header h1, header h2 {
+header h1 {
   margin: 0;
+  font-size: 3em;
+}
+
+header h2 {
+  margin: 0.5em 0 0;
+  font-size: 1.5em;
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 main h2 {
-  margin-top: 2rem;
+  margin-top: 0;
+  color: #4CAF50;
 }
 
 .rules-list {
@@ -41,7 +58,7 @@ main h2 {
 }
 
 button {
-  background-color: #00A7E1;
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -52,10 +69,20 @@ button {
   margin: 1rem 0;
   cursor: pointer;
   border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
 }
 
 button.secondary {
-  background-color: #777;
+  background-color: #ddd;
+  color: black;
+}
+
+button.secondary:hover {
+  background-color: #ccc;
 }
 
 .clearfix::after {
@@ -73,13 +100,29 @@ hr {
   border-color: #ccc;
 }
 
-</style>
+footer {
+  background-color: #3e3e3e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
 
+footer nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer nav a:hover {
+  color: #ddd;
+}
+</style>
 </head>
 <body>
 <header>
   <h1>LuozaixuanMinecraftServer</h1>
-  <h2>官方站点</h2>
+  <h2>纯净生存服务器</h2>
 </header>
 
 <div class="container">
@@ -115,13 +158,18 @@ hr {
 <footer>
   <nav>
     <a href="https://mc.luozaixuan.top/index.html">原版服首页</a>
-    <a href="https://modmc.luozaixuan.top">模组服首页</a>
+    <a href="https://modmc.luozaixuan.top/">模组服首页</a>
     <a href="https://mc.luozaixuan.top/html/we.html">关于我们</a>
     <a href="https://mc.luozaixuan.top/html/rules.html">服务器规则</a>
     <a href="https://mc.luozaixuan.top/html/contact.html">联系方式</a>
-    <a href="https://bbs.luozaixuan.top">LuozaixuanBBS</a>
+    <a href="http://bbs.luozaixuan.top">LuozaixuanBBS</a>
   </nav>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0e61d4ab9ec14782a2114b907ac27452"}'></script><!-- Cloudflare Pages Analytics -->
 </body>
 </html>
+
+
+
