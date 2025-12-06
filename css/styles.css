@@ -1,0 +1,208 @@
+/* LuozaixuanMinecraftServer 统一样式表 */
+
+/* 基本样式设置 */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 容器样式 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 头部样式 */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+header h2 {
+  margin: 0.5em 0 0;
+  font-size: 1.5em;
+}
+
+/* 主内容样式 */
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+main h2 {
+  margin-top: 0;
+  color: #4CAF50;
+}
+
+main h3 {
+  color: #333;
+  margin-top: 1.5em;
+}
+
+/* 按钮样式 */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1rem 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.secondary {
+  background-color: #ddd;
+  color: black;
+}
+
+button.secondary:hover {
+  background-color: #ccc;
+}
+
+/* 链接样式 */
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 列表样式 */
+ul, ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+.rules-list {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin-bottom: 2em;
+}
+
+.rules-list li {
+  margin-bottom: 0.8em;
+}
+
+/* 特殊组件样式 */
+.server-address {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 400px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+}
+
+/* 辅助类 */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.centered {
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* 页脚样式 */
+footer {
+  background-color: #3e3e3e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer nav a:hover {
+  color: #ddd;
+}
+
+/* 404页面样式 */
+.error-container {
+  text-align: center;
+  padding: 50px 20px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-container h1 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+  color: #4CAF50;
+}
+
+.error-container p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+  
+  header h2 {
+    font-size: 1.2em;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  main {
+    padding: 15px;
+  }
+}
