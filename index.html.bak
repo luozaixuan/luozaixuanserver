@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -7,7 +8,7 @@
 <meta name="baidu-site-verification" content="codeva-PqMTRWckmT" />
 <title>LuozaixuanMinecraftServer - 纯净生存服务器</title>
 <style>
-/* 统一样式设置 */
+/* 简单样式设置 */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -51,11 +52,6 @@ main {
 main h2 {
   margin-top: 0;
   color: #4CAF50;
-}
-
-main h3 {
-  color: #333;
-  margin-top: 1.5em;
 }
 
 button {
@@ -106,28 +102,6 @@ button.secondary:hover {
   border: 1px solid #ddd;
 }
 
-.rules-list {
-  list-style-type: decimal;
-  padding-left: 2em;
-  margin-bottom: 2em;
-}
-
-.rules-list li {
-  margin-bottom: 0.8em;
-}
-
-.section {
-  margin-bottom: 3em;
-  padding-bottom: 2em;
-  border-bottom: 1px solid #eee;
-}
-
-.section:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
 footer {
   background-color: #3e3e3e;
   color: white;
@@ -155,8 +129,7 @@ footer nav a:hover {
 
 <div class="container">
   <main>
-    <!-- 关于服务器 -->
-    <section class="section">
+    <section>
       <h2>关于 LuozaixuanMinecraftServer</h2>
       <p>
         LuozaixuanMinecraftServer 是一个专注于纯净生存体验的 Minecraft 服务器，我们不使用任何模组和不必要的插件，还原原版游戏的核心乐趣。在这里，玩家们可以享受到不受干扰的自然生存环境，体验真实的探索、采集与建设过程。
@@ -164,12 +137,9 @@ footer nav a:hover {
       <p>
         作为服主，Luozaixuan 致力于营造一个公平、友善、和谐的游戏社区，鼓励玩家们相互尊重、互助合作，一同在这个无垠的方块世界中留下独特的足迹。
       </p>
-    </section>
 
-    <!-- 如何加入服务器 -->
-    <section class="section">
-      <h2>如何加入服务器</h2>
       <div class="centered">
+        <h3>如何加入服务器</h3>
         <div class="server-address clearfix">
           <span>服务器地址:</span>
           <span id="serverAddress">123.157.211.154:17990</span>
@@ -180,43 +150,17 @@ footer nav a:hover {
         </p>
 
         <button onclick="copyServerAddress()">复制服务器地址</button>
+        <script>
+          function copyServerAddress() {
+            navigator.clipboard.writeText(document.getElementById('serverAddress').innerText);
+            alert('服务器地址已复制到剪贴板!');
+          }
+        </script>
+
         <button class="secondary" onclick="window.open('https://minecraft.net/download')">下载 Minecraft 启动器</button>
       </div>
     </section>
 
-    <!-- 服务器规则 -->
-    <section class="section">
-      <h2>服务器规则</h2>
-
-      <p>为了保证所有玩家在 LuozaixuanMinecraftServer 上能够拥有公平、安全、愉快的游戏体验，请务必遵守以下规则：</p>
-
-      <ol class="rules-list">
-        <li>禁止任何形式的作弊行为，包括但不限于使用外挂、修改客户端数据等。</li>
-        <li>尊重其他玩家，不进行人身攻击、恶意骚扰或散布不良信息。</li>
-        <li>未经他人同意，不得破坏、窃取或更改他人的建筑及物品。</li>
-        <li>不在非指定区域进行大规模自动化农场或其他可能影响服务器性能的行为。</li>
-        <li>积极参与社区活动，保持友好交流，共建和谐游戏环境。</li>
-        <li>服从管理员安排，违反规则者将视情况受到警告、禁言、封禁等处罚。</li>
-        <li>禁止获得任何非法物品或装备（包括但不限于255附魔物品、附魔方块、255附魔装备、命令方块、结构方块）。</li>
-        <li>禁止非法获得物品、装备。</li>
-      </ol>
-
-      <p>以上规则适用于所有玩家，我们将定期更新并补充规则以适应服务器发展，请密切关注公告通知。</p>
-    </section>
-
-    <!-- 联系我们 -->
-    <section class="section">
-      <h2>联系我们</h2>
-      <p>我们非常欢迎您的反馈和建议，以下是您可以联系我们的方式：</p>
-      
-      <h3>服主直接联系</h3>
-      <p>如果您需要直接与服主Luozaixuan沟通，请通过以下邮箱联系：</p>
-      <p>Email: <a href="mailto:luozaixuan@outlook.com">luozaixuan@outlook.com</a></p>
-      
-      <h3>QQ群</h3>
-      <p>关注我们在QQ上的动态，获取最新资讯和活动预告：</p>
-      <p>目前正在筹备中...</p>
-    </section>
   </main>
 </div>
 
@@ -231,12 +175,6 @@ footer nav a:hover {
   </nav>
 </footer>
 
-<script>
-  function copyServerAddress() {
-    navigator.clipboard.writeText(document.getElementById('serverAddress').innerText);
-    alert('服务器地址已复制到剪贴板!');
-  }
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0e61d4ab9ec14782a2114b907ac27452"}'></script><!-- Cloudflare Pages Analytics -->
 </body>
