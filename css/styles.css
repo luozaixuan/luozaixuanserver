@@ -35,6 +35,63 @@ header h2 {
   font-size: 1.5em;
 }
 
+/* 红色通知框样式 */
+.warning-box {
+  background-color: #ffebee;
+  border: 2px solid #f44336;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #c62828;
+}
+
+.warning-box h3 {
+  color: #b71c1c;
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+.warning-box ul {
+  margin-bottom: 20px;
+}
+
+.warning-box li {
+  margin-bottom: 10px;
+}
+
+.warning-box strong {
+  color: #b71c1c;
+  font-weight: bold;
+}
+
+/* 下载按钮容器样式 */
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.download-buttons button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  min-width: 150px;
+}
+
+.download-buttons button:hover {
+  background-color: #d32f2f;
+}
+
 /* 主内容样式 */
 main {
   background-color: white;
@@ -204,5 +261,15 @@ footer nav a:hover {
   
   main {
     padding: 15px;
+  }
+  
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .download-buttons button {
+    width: 100%;
+    max-width: 250px;
   }
 }
