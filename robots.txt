@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /logs/
+Disallow: /*.log$
+Disallow: /*.tmp$
+
+Sitemap: https://mc.luozaixuan.top/sitemap.xml
