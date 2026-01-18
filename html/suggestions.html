@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuozaixuanMinecraftServer - 建言献策</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+</head>
+<body>
+    <header>
+        <h1>LuozaixuanMinecraftServer - 建言献策</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <section>
+                <h2>建言献策</h2>
+                <p>感谢您对LuozaixuanMinecraftServer的关注和支持！我们非常重视每一位玩家的意见和建议，您的建议将帮助我们不断改进服务器，为大家提供更好的游戏体验。</p>
+                
+                <h3>如何提交建议</h3>
+                <p>您可以通过以下方式向我们提交您的建议：</p>
+                <ul>
+                    <li>发送邮件至服主邮箱：<strong>luozaixuan@outlook.com</strong></li>
+                    <li>在我们的QQ群内提出建议</li>
+                    <li>在LuozaixuanBBS论坛发帖讨论</li>
+                </ul>
+
+                <h3>建议类型</h3>
+                <p>我们欢迎以下类型的建议：</p>
+                <ul>
+                    <li>服务器功能改进建议</li>
+                    <li>游戏规则优化建议</li>
+                    <li>新活动或赛事创意</li>
+                    <li>社区建设建议</li>
+                    <li>Bug反馈和问题报告</li>
+                    <li>其他任何有助于服务器发展的建议</li>
+                </ul>
+
+                <h3>建议处理流程</h3>
+                <p>我们会对收到的每一条建议进行认真评估：</p>
+                <ul>
+                    <li>收到建议后，我们会进行初步审核</li>
+                    <li>对于可行的建议，我们会进行讨论和评估</li>
+                    <li>被采纳的建议将逐步实施，并在服务器公告中公布</li>
+                    <li>我们会定期整理和回复玩家的建议</li>
+                </ul>
+
+                <div class="centered">
+                    <h3>立即提交您的建议</h3>
+                    <p>点击下方按钮，通过邮件向我们发送您的宝贵建议：</p>
+                    <button onclick="window.location.href='mailto:luozaixuan@outlook.com?subject=服务器建议'">发送邮件建议</button>
+                    <button class="secondary" onclick="window.open('http://bbs.luozaixuan.top')">前往BBS论坛</button>
+                </div>
+
+                <div class="section">
+                    <h3>在线评论</h3>
+                    <p>您也可以在下方直接提交您的建议和意见：</p>
+                    <div id="container"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+      id: 'location.href',
+      owner: 'luozaixuan',
+      repo: 'commet',
+      oauth: {
+        client_id: 'Ov23li1bZWZK5I7GWVcj',
+        client_secret: 'b8a9739c46655c34b9eb101e0fae4928a1cf0ff3',
+      },
+    })
+    gitment.render('container')
+    </script>
+
+    <footer>
+        <nav>
+            <a href="https://mc.luozaixuan.top/index.html">原版服首页</a>
+            <a href="https://modmc.luozaixuan.top/">模组服首页</a>
+            <a href="https://mc.luozaixuan.top/html/we.html">关于我们</a>
+            <a href="https://mc.luozaixuan.top/html/rules.html">服务器规则</a>
+            <a href="https://mc.luozaixuan.top/html/contact.html">联系方式</a>
+            <a href="https://mc.luozaixuan.top/html/suggestions.html">建言献策</a>
+            <a href="http://bbs.luozaixuan.top">LuozaixuanBBS</a>
+        </nav>
+    </footer>
+</body>
+</html>
