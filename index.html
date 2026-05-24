@@ -40,7 +40,7 @@
         LuozaixuanMinecraftServer 是一个机械动力和沉浸式飞机的模组服务器，我们精心挑选了各种有趣的模组，为玩家带来更加丰富的游戏体验。在这里，玩家们可以享受到各种模组带来的新玩法、新内容和新挑战。
       </p>
       <p>
-        作为服主，Luozaixuan 致力于营造一个公平、友善、和谐的游戏社区，鼓励玩家们相互尊重、互助合作，一同在这个充满创意的模组世界中留下独特的足迹。
+        本服务器运行在 <a href="https://www.rainyun.com/luozx_" target="_blank">雨云</a> 云服务器上。
       </p>
 
       <div class="centered">
@@ -94,6 +94,20 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<!-- 雨云推广弹窗 -->
+<div id="rainyun-popup" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#1a1a2e;color:#eee;padding:30px;border-radius:12px;max-width:420px;width:90%;text-align:center;position:relative;box-shadow:0 4px 20px rgba(0,0,0,0.5);">
+    <span onclick="closePopup()" style="position:absolute;top:10px;right:15px;font-size:24px;cursor:pointer;color:#aaa;">&times;</span>
+    <h3 style="margin-top:0;color:#4fc3f7;">🌧️ 服务器由雨云驱动</h3>
+    <p>本服务器运行在 <a href="https://www.rainyun.com/luozx_" target="_blank" style="color:#4fc3f7;">雨云</a> 云服务器上。</p>
+    <p style="font-size:14px;color:#bbb;">雨云提供高性能、低延迟的服务器托管服务，价格实惠，适合各类游戏服务器和网站部署。</p>
+    <button onclick="window.open('https://www.rainyun.com/luozx_');closePopup();" style="background:#4fc3f7;color:#000;border:none;padding:10px 24px;border-radius:6px;cursor:pointer;font-size:16px;font-weight:bold;margin-top:10px;">立即体验雨云</button>
+  </div>
+</div>
+<script>
+function closePopup(){document.getElementById('rainyun-popup').style.display='none';}
+window.addEventListener('load',function(){document.getElementById('rainyun-popup').style.display='flex';});
+</script>
 <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0e61d4ab9ec14782a2114b907ac27452"}'></script><!-- Cloudflare Pages Analytics -->
 </body>
 </html>
