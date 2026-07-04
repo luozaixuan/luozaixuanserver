@@ -6,88 +6,124 @@
 <meta name="msvalidate.01" content="E7EEE6BFECB614F74CB34A30D936938A" />
 <meta name="baidu-site-verification" content="codeva-PqMTRWckmT" />
 <meta name="robots" content="index, follow">
+<meta name="description" content="LuozaixuanMinecraftServer - 机械动力和沉浸式飞机模组服务器，提供丰富的游戏体验">
 <title>LuozaixuanMinecraftServer - 模组服务器</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Russo+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header>
-  <h1>LuozaixuanMinecraftServer</h1>
-  <h2>模组服务器</h2>
+
+<!-- 扫描线覆盖层 -->
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-badge" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 7h4v4H7z"/><path d="M13 7h4"/><path d="M13 11h4"/><path d="M7 15h10"/></svg>
+    </div>
+    <h1>LuozaixuanMinecraftServer</h1>
+    <p class="header-subtitle">机械动力 · 沉浸式飞机 · 模组服务器</p>
+    <div class="header-glow" aria-hidden="true"></div>
+  </div>
 </header>
 
 <div class="container">
   <main>
-    <!-- 红色通知框 -->
-    <div class="warning-box">
-      <h3>服务器周目变更通知</h3>
-      <p>尊敬的玩家们：</p>
-      <ul>
+    <!-- 周目变更通知 -->
+    <section class="notice-section" aria-label="服务器周目变更通知">
+      <div class="notice-header">
+        <svg class="notice-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <h2>服务器周目变更通知</h2>
+      </div>
+      <ul class="notice-list">
         <li>该周目将关闭，<strong>2025年1月17日15:00后的数据可能不会保存</strong></li>
         <li>服务器将于<strong>1月18日停止服务</strong></li>
         <li>新周目将于<strong>2月5日启动</strong></li>
         <li>自<strong>1月18日起</strong>，可以下载本周目存档</li>
       </ul>
-      
-      <div class="download-buttons">
-        <button onclick="window.open('https://www.123865.com/s/xf7RVv-9o1Kd')">下载存档(123云盘)</button>
-        <button onclick="window.open('https://drive.google.com/file/d/1xJzG-KggSDYXBwqKPClmHsAglGKuo8f5/view?usp=drive_link')">下载存档(Google)</button>
+      <div class="notice-actions">
+        <a href="https://www.123865.com/s/xf7RVv-9o1Kd" class="btn btn-notice" target="_blank" rel="noopener">下载存档 (123云盘)</a>
+        <a href="https://drive.google.com/file/d/1xJzG-KggSDYXBwqKPClmHsAglGKuo8f5/view?usp=drive_link" class="btn btn-notice" target="_blank" rel="noopener">下载存档 (Google)</a>
       </div>
-    </div>
-    
-    <section>
+    </section>
+
+    <!-- 关于服务器 -->
+    <section class="about-section" aria-label="关于服务器">
       <h2>关于 LuozaixuanMinecraftServer</h2>
       <p>
         LuozaixuanMinecraftServer 是一个机械动力和沉浸式飞机的模组服务器，我们精心挑选了各种有趣的模组，为玩家带来更加丰富的游戏体验。在这里，玩家们可以享受到各种模组带来的新玩法、新内容和新挑战。
       </p>
       <p>
-        本服务器运行在 <a href="https://www.rainyun.com/luozx_" target="_blank">雨云</a> 云服务器上。
+        本服务器运行在 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener">雨云</a> 云服务器上。
       </p>
-
-      <div class="centered">
-        <h3>如何加入服务器</h3>
-        <div class="server-address clearfix">
-          <span>服务器地址:</span>
-          <span id="serverAddress">123.157.211.154:12110</span>
-        </div>
-
-        <div class="qq-group">
-          <h4>QQ群</h4>
-          <p>群号: <strong>915515421</strong></p>
-          <p>请先加入QQ群获取客户端，然后使用客户端连接服务器。</p>
-        </div>
-
-        <div class="client-download">
-          <h4>整合包下载</h4>
-          <p>提供两种格式的整合包：</p>
-          <h5>Modrinth 格式</h5>
-          <button onclick="window.open('https://github.com/luozaixuan/mcserverclient/releases/download/v1.2/LMCServer.mrpack')">下载 (GitHub)</button>
-          <button class="secondary" onclick="window.open('https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/v1.2/LMCServer.mrpack')">下载 (镜像)</button>
-          <h5>MCBBS 格式</h5>
-          <button onclick="window.open('https://github.com/luozaixuan/mcserverclient/releases/download/v1.2/LMCServer.zip')">下载 (GitHub)</button>
-          <button class="secondary" onclick="window.open('https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/v1.2/LMCServer.zip')">下载 (镜像)</button>
-        </div>
-
-        <p style="color: red; font-weight: bold;">
-          警告：如果离线用户加入服务器提示无效会话，请换一个名字确保不要和正版用户重名，并不要使用5个字以内的id
-        </p>
-
-        <button onclick="copyServerAddress()">复制服务器地址</button>
-        <script>
-          function copyServerAddress() {
-            navigator.clipboard.writeText(document.getElementById('serverAddress').innerText);
-            alert('服务器地址已复制到剪贴板!');
-          }
-        </script>
-
-        <button class="secondary" onclick="window.open('https://qm.qq.com/q/NzYmsReNaO')">加入QQ群</button>
-      </div>
     </section>
 
+    <!-- 如何加入 -->
+    <section class="join-section" aria-label="如何加入服务器">
+      <h2>如何加入服务器</h2>
+
+      <!-- 服务器地址 -->
+      <div class="server-address-card">
+        <span class="address-label">服务器地址</span>
+        <div class="address-display">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          <code id="serverAddress">123.157.211.154:12110</code>
+        </div>
+        <button class="btn btn-copy" onclick="copyServerAddress()" aria-label="复制服务器地址">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          复制
+        </button>
+      </div>
+
+      <!-- QQ群 -->
+      <div class="info-card">
+        <div class="card-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <h3>QQ群</h3>
+        </div>
+        <p class="card-text">群号: <strong>915515421</strong></p>
+        <p class="card-text">请先加入QQ群获取客户端，然后使用客户端连接服务器。</p>
+        <a href="https://qm.qq.com/q/NzYmsReNaO" class="btn btn-secondary" target="_blank" rel="noopener">加入QQ群</a>
+      </div>
+
+      <!-- 整合包下载 -->
+      <div class="info-card">
+        <div class="card-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <h3>整合包下载</h3>
+        </div>
+        <p class="card-text">提供两种格式的整合包：</p>
+
+        <div class="modpack-group">
+          <h4>Modrinth 格式</h4>
+          <div class="btn-group">
+            <a href="https://github.com/luozaixuan/mcserverclient/releases/download/v1.2/LMCServer.mrpack" class="btn btn-primary" target="_blank" rel="noopener">下载 (GitHub)</a>
+            <a href="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/v1.2/LMCServer.mrpack" class="btn btn-secondary" target="_blank" rel="noopener">下载 (镜像)</a>
+          </div>
+        </div>
+
+        <div class="modpack-group">
+          <h4>MCBBS 格式</h4>
+          <div class="btn-group">
+            <a href="https://github.com/luozaixuan/mcserverclient/releases/download/v1.2/LMCServer.zip" class="btn btn-primary" target="_blank" rel="noopener">下载 (GitHub)</a>
+            <a href="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/v1.2/LMCServer.zip" class="btn btn-secondary" target="_blank" rel="noopener">下载 (镜像)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 警告 -->
+      <div class="warning-text" role="alert">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span>如果离线用户加入服务器提示无效会话，请换一个名字确保不要和正版用户重名，并不要使用5个字以内的id</span>
+      </div>
+    </section>
   </main>
 </div>
 
-<footer>
-  <nav>
+<footer class="site-footer">
+  <nav class="footer-nav" aria-label="页脚导航">
     <a href="https://mc.luozaixuan.top/index.html">原版服首页</a>
     <a href="https://modmc.luozaixuan.top/">模组服首页</a>
     <a href="https://mc.luozaixuan.top/html/we.html">关于我们</a>
@@ -98,15 +134,21 @@
   </nav>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script>
+  function copyServerAddress() {
+    navigator.clipboard.writeText(document.getElementById('serverAddress').innerText);
+    alert('服务器地址已复制到剪贴板!');
+  }
+</script>
+
 <!-- 雨云推广弹窗 -->
-<div id="rainyun-popup" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:9999;justify-content:center;align-items:center;">
-  <div style="background:#1a1a2e;color:#eee;padding:30px;border-radius:12px;max-width:420px;width:90%;text-align:center;position:relative;box-shadow:0 4px 20px rgba(0,0,0,0.5);">
-    <span onclick="closePopup()" style="position:absolute;top:10px;right:15px;font-size:24px;cursor:pointer;color:#aaa;">&times;</span>
-    <h3 style="margin-top:0;color:#4fc3f7;">🌧️ 服务器由雨云驱动</h3>
-    <p>本服务器运行在 <a href="https://www.rainyun.com/luozx_" target="_blank" style="color:#4fc3f7;">雨云</a> 云服务器上。</p>
-    <p style="font-size:14px;color:#bbb;">雨云提供高性能、低延迟的服务器托管服务，价格实惠，适合各类游戏服务器和网站部署。</p>
-    <button onclick="window.open('https://www.rainyun.com/luozx_');closePopup();" style="background:#4fc3f7;color:#000;border:none;padding:10px 24px;border-radius:6px;cursor:pointer;font-size:16px;font-weight:bold;margin-top:10px;">立即体验雨云</button>
+<div id="rainyun-popup" class="popup-overlay" role="dialog" aria-modal="true" aria-label="雨云推广">
+  <div class="popup-content">
+    <button onclick="closePopup()" class="popup-close" aria-label="关闭弹窗">&times;</button>
+    <h3 class="popup-title">服务器由雨云驱动</h3>
+    <p>本服务器运行在 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener" class="popup-link">雨云</a> 云服务器上。</p>
+    <p class="popup-desc">雨云提供高性能、低延迟的服务器托管服务，价格实惠，适合各类游戏服务器和网站部署。</p>
+    <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener" class="btn btn-popup" onclick="closePopup()">立即体验雨云</a>
   </div>
 </div>
 <script>
