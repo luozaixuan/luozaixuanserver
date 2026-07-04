@@ -1,81 +1,143 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <title>LuozaixuanMinecraftServer - 建言献策</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="LuozaixuanMinecraftServer - 建言献策">
+<meta name="theme-color" content="#0F0F23">
+<title>LuozaixuanMinecraftServer - 建言献策</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 </head>
 <body>
-    <header>
-        <h1>LuozaixuanMinecraftServer - 建言献策</h1>
-    </header>
 
-    <div class="container">
-        <main>
-            <section>
-                <h2>建言献策</h2>
-                <p>感谢您对LuozaixuanMinecraftServer的关注和支持！我们非常重视每一位玩家的意见和建议，您的建议将帮助我们不断改进服务器，为大家提供更好的游戏体验。</p>
-                
-                <h3>如何提交建议</h3>
-                <p>您可以通过以下方式向我们提交您的建议：</p>
-                <ul>
-                    <li>发送邮件至服主邮箱：<strong>luozaixuan@outlook.com</strong></li>
-                    <li>在我们的QQ群内提出建议（群号：915515421）</li>
-                    <li>在LuozaixuanBBS论坛发帖讨论</li>
-                </ul>
+<a href="../index.html" class="skip-link">返回主页</a>
 
-                <h3>建议处理流程</h3>
-                <p>我们会对收到的每一条建议进行认真评估：</p>
-                <ul>
-                    <li>收到建议后，我们会进行初步审核</li>
-                    <li>对于可行的建议，我们会进行讨论和评估</li>
-                    <li>被采纳的建议将逐步实施，并在服务器公告中公布</li>
-                    <li>我们会定期整理和回复玩家的建议</li>
-                </ul>
+<div class="scanlines" aria-hidden="true"></div>
 
-                <div class="centered">
-                    <h3>立即提交您的建议</h3>
-                    <p>点击下方按钮，通过邮件向我们发送您的宝贵建议：</p>
-                    <button onclick="window.location.href='mailto:luozaixuan@outlook.com?subject=服务器建议'">发送邮件建议</button>
-                    <button class="secondary" onclick="window.open('http://bbs.luozaixuan.top')">前往BBS论坛</button>
-                </div>
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="../index.html" class="header-badge" aria-label="返回主页">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 7h4v4H7z"/><path d="M13 7h4"/><path d="M13 11h4"/><path d="M7 15h10"/></svg>
+    </a>
+    <h1 class="glitch load-glitch" data-text="建言献策">建言献策</h1>
+    <p class="header-subtitle">Feedback & Suggestions</p>
+    <div class="header-glow" aria-hidden="true"></div>
+  </div>
+</header>
 
-                <div class="section">
-                    <h3>在线评论</h3>
-                    <p>您也可以在下方直接提交您的建议和意见：</p>
-                    <div id="container"></div>
-                </div>
-            </section>
-        </main>
-    </div>
+<div class="container">
+  <main id="main-content">
+    <section class="about-section" aria-label="建言献策说明">
+      <h2>建言献策</h2>
+      <p>感谢您对 LuozaixuanMinecraftServer 的关注和支持！我们非常重视每一位玩家的意见和建议，您的建议将帮助我们不断改进服务器，为大家提供更好的游戏体验。</p>
+    </section>
 
-    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-    <script>
-    var gitment = new Gitment({
-      id: 'location.href',
-      owner: 'luozaixuan',
-      repo: 'commet',
-      oauth: {
-        client_id: 'Ov23li1bZWZK5I7GWVcj',
-        client_secret: 'b8a9739c46655c34b9eb101e0fae4928a1cf0ff3',
-      },
-    })
-    gitment.render('container')
-    </script>
+    <section class="info-card" aria-label="如何提交建议">
+      <div class="card-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <h3>如何提交建议</h3>
+      </div>
+      <p class="card-text">您可以通过以下方式向我们提交您的建议：</p>
+      <ul>
+        <li>发送邮件至服主邮箱：<a href="mailto:luozaixuan@outlook.com" class="popup-link">luozaixuan@outlook.com</a></li>
+        <li>在我们的 QQ 群内提出建议（群号：<strong>915515421</strong>）</li>
+        <li>在 LuozaixuanBBS 论坛发帖讨论</li>
+      </ul>
+    </section>
 
-    <footer>
-        <nav>
-            <a href="https://mc.luozaixuan.top/index.html">原版服首页</a>
-            <a href="https://modmc.luozaixuan.top/">模组服首页</a>
-            <a href="https://mc.luozaixuan.top/html/we.html">关于我们</a>
-            <a href="https://mc.luozaixuan.top/html/rules.html">服务器规则</a>
-            <a href="https://mc.luozaixuan.top/html/contact.html">联系方式</a>
-            <a href="https://mc.luozaixuan.top/html/suggestions.html">建言献策</a>
-            <a href="http://bbs.luozaixuan.top">LuozaixuanBBS</a>
-        </nav>
-    </footer>
+    <section class="info-card" aria-label="建议处理流程">
+      <div class="card-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        <h3>建议处理流程</h3>
+      </div>
+      <p class="card-text">我们会对收到的每一条建议进行认真评估：</p>
+      <ul>
+        <li>收到建议后，我们会进行初步审核</li>
+        <li>对于可行的建议，我们会进行讨论和评估</li>
+        <li>被采纳的建议将逐步实施，并在服务器公告中公布</li>
+        <li>我们会定期整理和回复玩家的建议</li>
+      </ul>
+    </section>
+
+    <section class="info-card" aria-label="立即提交">
+      <div class="card-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        <h3>立即提交您的建议</h3>
+      </div>
+      <p class="card-text">点击下方按钮，通过邮件或论坛向我们发送您的宝贵建议：</p>
+      <div class="btn-group">
+        <a href="mailto:luozaixuan@outlook.com?subject=%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BB%BA%E8%AE%AE" class="btn btn-primary">发送邮件建议</a>
+        <a href="http://bbs.luozaixuan.top" class="btn btn-secondary" target="_blank" rel="noopener">前往BBS论坛</a>
+      </div>
+    </section>
+
+    <section class="info-card" aria-label="在线评论">
+      <div class="card-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <h3>在线评论</h3>
+      </div>
+      <p class="card-text">您也可以在下方直接提交您的建议和意见：</p>
+      <div id="container"></div>
+    </section>
+  </main>
+</div>
+
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    id: 'location.href',
+    owner: 'luozaixuan',
+    repo: 'commet',
+    oauth: {
+      client_id: 'Ov23li1bZWZK5I7GWVcj',
+      client_secret: 'b8a9739c46655c34b9eb101e0fae4928a1cf0ff3',
+    },
+  })
+  gitment.render('container')
+</script>
+
+<footer class="site-footer" role="contentinfo">
+  <nav class="footer-nav" aria-label="页脚导航">
+    <a href="https://mc.luozaixuan.top/index.html">原版服首页</a>
+    <a href="we.html">关于我们</a>
+    <a href="rules.html">服务器规则</a>
+    <a href="contact.html">联系方式</a>
+    <a href="suggestions.html">建言献策</a>
+    <a href="http://bbs.luozaixuan.top">LuozaixuanBBS</a>
+  </nav>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<div id="rainyun-popup" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+  <div class="popup-content">
+    <button onclick="closePopup()" class="popup-close" aria-label="关闭弹窗">&times;</button>
+    <h3 id="popup-title" class="popup-title">服务器由雨云驱动</h3>
+    <p>本服务器运行在 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener" class="popup-link">雨云</a> 云服务器上。</p>
+    <p class="popup-desc">雨云提供高性能、低延迟的服务器托管服务，价格实惠，适合各类游戏服务器和网站部署。</p>
+    <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener" class="btn btn-popup" onclick="closePopup()">立即体验雨云</a>
+  </div>
+</div>
+
+<script>
+  function showToast(message) {
+    var toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.classList.add('is-visible');
+    clearTimeout(window.__toastTimer);
+    window.__toastTimer = setTimeout(function() { toast.classList.remove('is-visible'); }, 2200);
+  }
+  function closePopup() { document.getElementById('rainyun-popup').style.display = 'none'; }
+  window.addEventListener('load', function() {
+    setTimeout(function() { var p = document.getElementById('rainyun-popup'); if (p) p.style.display = 'flex'; }, 1500);
+  });
+  document.getElementById('rainyun-popup').addEventListener('click', function(e) { if (e.target === this) closePopup(); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePopup(); });
+</script>
 </body>
 </html>
