@@ -102,16 +102,16 @@
         <div class="modpack-group">
           <h4>Modrinth 格式</h4>
           <div class="btn-group">
-            <a href="https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.mrpack" class="btn btn-primary" target="_blank" rel="noopener">下载 (GitHub)</a>
-            <a href="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.mrpack" class="btn btn-secondary" target="_blank" rel="noopener">下载 (镜像)</a>
+            <a href="https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.mrpack" class="btn btn-primary dl-link" data-base="https://github.com/luozaixuan/mcserverclient/releases/download/" data-file="LMCServer.mrpack" target="_blank" rel="noopener">下载 (GitHub)</a>
+            <a href="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.mrpack" class="btn btn-secondary dl-link-mirror" data-base="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/" data-file="LMCServer.mrpack" target="_blank" rel="noopener">下载 (镜像)</a>
           </div>
         </div>
 
         <div class="modpack-group">
           <h4>MCBBS 格式</h4>
           <div class="btn-group">
-            <a href="https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.zip" class="btn btn-primary" target="_blank" rel="noopener">下载 (GitHub)</a>
-            <a href="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.zip" class="btn btn-secondary" target="_blank" rel="noopener">下载 (镜像)</a>
+            <a href="https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.zip" class="btn btn-primary dl-link" data-base="https://github.com/luozaixuan/mcserverclient/releases/download/" data-file="LMCServer.zip" target="_blank" rel="noopener">下载 (GitHub)</a>
+            <a href="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.zip" class="btn btn-secondary dl-link-mirror" data-base="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/" data-file="LMCServer.zip" target="_blank" rel="noopener">下载 (镜像)</a>
           </div>
         </div>
       </div>
@@ -223,6 +223,36 @@
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closePopup();
   });
+
+  // Fetch latest release tag from GitHub API and update download links
+  (function() {
+    var API_URL = 'https://api.github.com/repos/luozaixuan/mcserverclient/releases/latest';
+    var FALLBACK_TAG = 'v1.7';
+    var dlLinks = document.querySelectorAll('.dl-link');
+    var dlMirrorLinks = document.querySelectorAll('.dl-link-mirror');
+
+    function updateLinks(tag) {
+      dlLinks.forEach(function(el) {
+        el.href = el.getAttribute('data-base') + tag + '/' + el.getAttribute('data-file');
+      });
+      dlMirrorLinks.forEach(function(el) {
+        el.href = el.getAttribute('data-base') + tag + '/' + el.getAttribute('data-file');
+      });
+    }
+
+    fetch(API_URL, { cache: 'no-store' })
+      .then(function(res) {
+        if (!res.ok) throw new Error('API error');
+        return res.json();
+      })
+      .then(function(data) {
+        var tag = data.tag_name;
+        if (tag) updateLinks(tag);
+      })
+      .catch(function() {
+        updateLinks(FALLBACK_TAG);
+      });
+  })();
 </script>
 
 <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0e61d4ab9ec14782a2114b907ac27452"}'></script><!-- Cloudflare Pages Analytics -->
