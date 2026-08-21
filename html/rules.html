@@ -5,85 +5,114 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
 <meta name="description" content="LuozaixuanMinecraftServer - 服务器规则">
-<meta name="theme-color" content="#0F0F23">
+<meta name="theme-color" content="#0A0A0B">
 <title>LuozaixuanMinecraftServer - 服务器规则</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
 <a href="../index.html" class="skip-link">返回主页</a>
 
-<div class="scanlines" aria-hidden="true"></div>
-
-<header class="site-header" role="banner">
-  <div class="header-inner">
-    <a href="../index.html" class="header-badge" aria-label="返回主页">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 7h4v4H7z"/><path d="M13 7h4"/><path d="M13 11h4"/><path d="M7 15h10"/></svg>
+<!-- ===== 导航 ===== -->
+<nav class="site-nav" aria-label="主导航">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand" aria-label="LuozaixuanMinecraftServer 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+      </span>
+      <span>LMCS</span>
     </a>
-    <h1 class="glitch load-glitch" data-text="服务器规则">服务器规则</h1>
-    <p class="header-subtitle">Server Rules</p>
-    <div class="header-glow" aria-hidden="true"></div>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="we.html">关于我们</a>
+      <a href="rules.html" aria-current="page">服务器规则</a>
+      <a href="contact.html">联系方式</a>
+      <a href="suggestions.html">建言献策</a>
+      <a href="https://qm.qq.com/q/NzYmsReNaO" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener">加入QQ群</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== 页面头部 ===== -->
+<header class="hero" role="banner">
+  <div class="container">
+    <div class="page-head">
+      <p class="page-head-kicker">Server Rules</p>
+      <h1 class="page-head-title">服务器规则</h1>
+      <p class="page-head-subtitle">请遵守规则，共同维护良好的游戏环境</p>
+    </div>
   </div>
 </header>
 
-<div class="container">
-  <main id="main-content">
-    <section class="notice-section" aria-label="规则须知">
+<!-- ===== 主体 ===== -->
+<main id="main-content">
+  <div class="container container-slim">
+
+    <section class="notice notice--info" aria-label="规则须知" data-reveal>
       <div class="notice-header">
-        <svg class="notice-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        <h2>请遵守规则</h2>
+        <span class="notice-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 16 12 12 12 8"/><line x1="12" y1="4" x2="12.01" y2="4"/></svg>
+        </span>
+        <h3>请遵守规则</h3>
       </div>
-      <p>为了维护服务器的良好环境，确保所有玩家都能享受愉快的游戏体验，我们制定了以下规则，请所有玩家严格遵守。</p>
+      <p class="notice-desc">为了维护服务器的良好环境，确保所有玩家都能享受愉快的游戏体验，我们制定了以下规则，请所有玩家严格遵守。</p>
     </section>
 
-    <section class="info-card" aria-label="基本规则">
+    <section class="card" aria-label="基本规则" data-reveal style="margin-top:var(--space-6)">
       <div class="card-header">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span class="card-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </span>
         <h3>基本规则</h3>
       </div>
-      <ul>
-        <li>尊重他人，友善相处，不得进行人身攻击、辱骂或骚扰其他玩家</li>
-        <li>遵守服务器的各项规定，服从管理员的合理管理</li>
-        <li>保持服务器环境整洁，不得在公共区域乱搭乱建</li>
-        <li>不得使用任何作弊软件、外挂或利用漏洞获取不正当优势</li>
-        <li>不得传播不良信息、违法内容或涉及敏感话题</li>
+      <ul class="tick-list">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>尊重他人，友善相处，不得进行人身攻击、辱骂或骚扰其他玩家</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>遵守服务器的各项规定，服从管理员的合理管理</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>保持服务器环境整洁，不得在公共区域乱搭乱建</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>不得使用任何作弊软件、外挂或利用漏洞获取不正当优势</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>不得传播不良信息、违法内容或涉及敏感话题</li>
       </ul>
     </section>
 
-    <section class="info-card" aria-label="游戏规则">
+    <section class="card" aria-label="游戏规则" data-reveal style="margin-top:var(--space-6)">
       <div class="card-header">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span class="card-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </span>
         <h3>游戏规则</h3>
       </div>
-      <ul>
-        <li>不得破坏他人的建筑或财产，未经允许不得进入他人领地</li>
-        <li>不得恶意刷屏、广告或发送垃圾信息</li>
-        <li>合理使用服务器资源，不得过度消耗服务器性能</li>
-        <li>尊重服务器的模组设置，不得随意修改客户端文件</li>
-        <li>使用文明的游戏ID，不得使用违规或不当的用户名</li>
+      <ul class="tick-list">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>不得破坏他人的建筑或财产，未经允许不得进入他人领地</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>不得恶意刷屏、广告或发送垃圾信息</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>合理使用服务器资源，不得过度消耗服务器性能</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>尊重服务器的模组设置，不得随意修改客户端文件</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>使用文明的游戏 ID，不得使用违规或不当的用户名</li>
       </ul>
     </section>
 
-    <section class="info-card" aria-label="处罚措施">
+    <section class="card" aria-label="处罚措施" data-reveal style="margin-top:var(--space-6)">
       <div class="card-header">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <span class="card-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </span>
         <h3>处罚措施</h3>
       </div>
-      <p>违反服务器规则的玩家将根据情节轻重受到以下处罚：</p>
-      <ul>
-        <li>第一次违规：<strong>警告</strong></li>
-        <li>第二次违规：<strong>临时禁言或禁玩</strong></li>
-        <li>严重违规或屡教不改：<strong>永久封禁</strong></li>
+      <p class="card-body" style="margin-bottom:var(--space-3)">违反服务器规则的玩家将根据情节轻重受到以下处罚：</p>
+      <ul class="tick-list">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>第一次违规：<strong>警告</strong></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>第二次违规：<strong>临时禁言或禁玩</strong></li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>严重违规或屡教不改：<strong>永久封禁</strong></li>
       </ul>
     </section>
 
-    <section class="notice-section" aria-label="严禁讨论政治内容">
+    <section class="notice notice--danger" aria-label="严禁讨论政治内容" data-reveal style="margin-top:var(--space-6)">
       <div class="notice-header">
-        <svg class="notice-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        <h2>严禁讨论政治内容</h2>
+        <span class="notice-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </span>
+        <h3>严禁讨论政治内容</h3>
       </div>
       <ul class="notice-list">
         <li>禁止在<strong>本服务器</strong>内讨论任何政治内容（包括但不限于政党、政治人物、政治事件、政治立场等）</li>
@@ -92,51 +121,84 @@
       </ul>
     </section>
 
-    <div class="warning-text" role="note">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    <div class="warning-bar" data-reveal style="margin-top:var(--space-6)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       <span>服务器地址：<strong>123.157.211.154:12110</strong> · QQ群：<strong>915515421</strong> · 如有问题请联系管理员或在QQ群中反馈 · 服务器保留对规则的最终解释权和修改权</span>
     </div>
-  </main>
-</div>
 
+  </div>
+</main>
+
+<!-- ===== 页脚 ===== -->
 <footer class="site-footer" role="contentinfo">
-  <nav class="footer-nav" aria-label="页脚导航">
-    <a href="https://mc.luozaixuan.top/index.html">原版服首页</a>
-    <a href="we.html">关于我们</a>
-    <a href="rules.html">服务器规则</a>
-    <a href="contact.html">联系方式</a>
-    <a href="suggestions.html">建言献策</a>
-    <a href="http://bbs.luozaixuan.top">LuozaixuanBBS</a>
-    <a href="https://blog.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBlog</a>
-  </nav>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">LuozaixuanMinecraftServer</p>
+        <p style="color:var(--fg-muted);font-size:.92rem;max-width:320px;">机械动力 · 沉浸式飞机 · 模组服务器。愿每一位玩家都能在这里找到属于自己的乐趣。</p>
+      </div>
+      <nav class="footer-col" aria-label="站点导航">
+        <h4>站点导航</h4>
+        <ul>
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="we.html">关于我们</a></li>
+          <li><a href="rules.html">服务器规则</a></li>
+          <li><a href="contact.html">联系方式</a></li>
+          <li><a href="suggestions.html">建言献策</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="社区链接">
+        <h4>社区</h4>
+        <ul>
+          <li><a href="https://qm.qq.com/q/NzYmsReNaO" target="_blank" rel="noopener">QQ群</a></li>
+          <li><a href="http://bbs.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBBS</a></li>
+          <li><a href="https://blog.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBlog</a></li>
+          <li><a href="https://github.com/luozaixuan" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-credit">
+      <span>© <span id="year">2026</span> LuozaixuanMinecraftServer</span>
+      <span>服务器由 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener">雨云</a> 云服务驱动</span>
+    </div>
+  </div>
 </footer>
 
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
-
-<div id="rainyun-popup" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
-  <div class="popup-content">
-    <button onclick="closePopup()" class="popup-close" aria-label="关闭弹窗">&times;</button>
-    <h3 id="popup-title" class="popup-title">服务器由雨云驱动</h3>
-    <p>本服务器运行在 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener" class="popup-link">雨云</a> 云服务器上。</p>
-    <p class="popup-desc">雨云提供高性能、低延迟的服务器托管服务，价格实惠，适合各类游戏服务器和网站部署。</p>
-    <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener" class="btn btn-popup" onclick="closePopup()">立即体验雨云</a>
-  </div>
-</div>
-
 <script>
-  function showToast(message) {
-    var toast = document.getElementById('toast');
-    toast.textContent = message;
-    toast.classList.add('is-visible');
-    clearTimeout(window.__toastTimer);
-    window.__toastTimer = setTimeout(function() { toast.classList.remove('is-visible'); }, 2200);
-  }
-  function closePopup() { document.getElementById('rainyun-popup').style.display = 'none'; }
-  window.addEventListener('load', function() {
-    setTimeout(function() { var p = document.getElementById('rainyun-popup'); if (p) p.style.display = 'flex'; }, 1500);
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function () {
+    var open = navLinks.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
-  document.getElementById('rainyun-popup').addEventListener('click', function(e) { if (e.target === this) closePopup(); });
-  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePopup(); });
+  navLinks.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      navLinks.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  (function () {
+    var items = document.querySelectorAll('[data-reveal]');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      items.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  })();
 </script>
+
+<!-- Cloudflare Pages Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0e61d4ab9ec14782a2114b907ac27452"}'></script>
 </body>
 </html>

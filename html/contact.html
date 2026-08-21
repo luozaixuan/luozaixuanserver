@@ -5,100 +5,180 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
 <meta name="description" content="LuozaixuanMinecraftServer - 联系方式">
-<meta name="theme-color" content="#0F0F23">
+<meta name="theme-color" content="#0A0A0B">
 <title>LuozaixuanMinecraftServer - 联系方式</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
 <a href="../index.html" class="skip-link">返回主页</a>
 
-<div class="scanlines" aria-hidden="true"></div>
-
-<header class="site-header" role="banner">
-  <div class="header-inner">
-    <a href="../index.html" class="header-badge" aria-label="返回主页">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 7h4v4H7z"/><path d="M13 7h4"/><path d="M13 11h4"/><path d="M7 15h10"/></svg>
+<!-- ===== 导航 ===== -->
+<nav class="site-nav" aria-label="主导航">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand" aria-label="LuozaixuanMinecraftServer 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+      </span>
+      <span>LMCS</span>
     </a>
-    <h1 class="glitch load-glitch" data-text="联系方式">联系方式</h1>
-    <p class="header-subtitle">Contact Us</p>
-    <div class="header-glow" aria-hidden="true"></div>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="we.html">关于我们</a>
+      <a href="rules.html">服务器规则</a>
+      <a href="contact.html" aria-current="page">联系方式</a>
+      <a href="suggestions.html">建言献策</a>
+      <a href="https://qm.qq.com/q/NzYmsReNaO" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener">加入QQ群</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== 页面头部 ===== -->
+<header class="hero" role="banner">
+  <div class="container">
+    <div class="page-head">
+      <p class="page-head-kicker">Contact Us</p>
+      <h1 class="page-head-title">联系方式</h1>
+      <p class="page-head-subtitle">欢迎通过以下方式与我们联系</p>
+    </div>
   </div>
 </header>
 
-<div class="container">
-  <main id="main-content">
-    <section class="about-section" aria-label="联系方式说明">
-      <h2>联系方式</h2>
-      <p>我们非常欢迎您的反馈和建议，以下是您可以联系我们的方式：</p>
-    </section>
+<!-- ===== 主体 ===== -->
+<main id="main-content">
+  <div class="container">
 
-    <section class="info-card" aria-label="服主邮箱">
-      <div class="card-header">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        <h3>服主直接联系</h3>
+    <section class="section" aria-label="联系方式说明">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker">Contact</p>
+        <h2 class="section-title">联系方式</h2>
+        <p class="section-desc">我们非常欢迎您的反馈和建议，以下是您可以联系我们的方式。</p>
       </div>
-      <p class="card-text">如果您需要直接与服主 Luozaixuan 沟通，请通过以下邮箱联系：</p>
-      <p class="card-text">Email: <a href="mailto:luozaixuan@outlook.com" class="popup-link">luozaixuan@outlook.com</a></p>
-    </section>
+      <div class="info-grid">
 
-    <section class="info-card" aria-label="QQ群">
-      <div class="card-header">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        <h3>QQ群</h3>
+        <article class="card" data-reveal>
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <h3>服主直接联系</h3>
+          </div>
+          <div class="card-body">
+            <p>如果您需要直接与服主 Luozaixuan 沟通，请通过以下邮箱联系：</p>
+            <p style="margin-top:var(--space-4)">
+              <a href="mailto:luozaixuan@outlook.com" class="btn btn-primary btn-sm">luozaixuan@outlook.com</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <h3>QQ群</h3>
+          </div>
+          <div class="card-body">
+            <p>加入我们的 QQ 群获取最新资讯、活动预告和客户端下载：</p>
+            <ul class="tick-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>QQ群号：<strong>915515421</strong></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>加入群后可获取服务器客户端</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>群内有详细的服务器信息和常见问题解答</li>
+            </ul>
+            <p style="margin-top:var(--space-4)">
+              <a href="https://qm.qq.com/q/NzYmsReNaO" class="btn btn-primary" target="_blank" rel="noopener">加入QQ群</a>
+            </p>
+          </div>
+        </article>
+
       </div>
-      <p class="card-text">加入我们的 QQ 群获取最新资讯、活动预告和客户端下载：</p>
-      <ul>
-        <li>QQ群号: <strong>915515421</strong></li>
-        <li>加入群后可获取服务器客户端</li>
-        <li>群内有详细的服务器信息和常见问题解答</li>
-      </ul>
-      <a href="https://qm.qq.com/q/NzYmsReNaO" class="btn btn-primary" target="_blank" rel="noopener">加入QQ群</a>
     </section>
-  </main>
-</div>
 
+    <section class="section" aria-label="行动号召" style="margin-top:var(--space-12)">
+      <div class="cta-banner" data-reveal>
+        <h2>想给服务器提建议？</h2>
+        <p>前往建言献策页面，分享您的想法，帮助服务器变得更好。</p>
+        <div class="cta-actions">
+          <a href="suggestions.html" class="btn btn-primary btn-lg">前往建言献策</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ===== 页脚 ===== -->
 <footer class="site-footer" role="contentinfo">
-  <nav class="footer-nav" aria-label="页脚导航">
-    <a href="https://mc.luozaixuan.top/index.html">原版服首页</a>
-    <a href="we.html">关于我们</a>
-    <a href="rules.html">服务器规则</a>
-    <a href="contact.html">联系方式</a>
-    <a href="suggestions.html">建言献策</a>
-    <a href="http://bbs.luozaixuan.top">LuozaixuanBBS</a>
-    <a href="https://blog.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBlog</a>
-  </nav>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">LuozaixuanMinecraftServer</p>
+        <p style="color:var(--fg-muted);font-size:.92rem;max-width:320px;">机械动力 · 沉浸式飞机 · 模组服务器。愿每一位玩家都能在这里找到属于自己的乐趣。</p>
+      </div>
+      <nav class="footer-col" aria-label="站点导航">
+        <h4>站点导航</h4>
+        <ul>
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="we.html">关于我们</a></li>
+          <li><a href="rules.html">服务器规则</a></li>
+          <li><a href="contact.html">联系方式</a></li>
+          <li><a href="suggestions.html">建言献策</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="社区链接">
+        <h4>社区</h4>
+        <ul>
+          <li><a href="https://qm.qq.com/q/NzYmsReNaO" target="_blank" rel="noopener">QQ群</a></li>
+          <li><a href="http://bbs.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBBS</a></li>
+          <li><a href="https://blog.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBlog</a></li>
+          <li><a href="https://github.com/luozaixuan" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-credit">
+      <span>© <span id="year">2026</span> LuozaixuanMinecraftServer</span>
+      <span>服务器由 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener">雨云</a> 云服务驱动</span>
+    </div>
+  </div>
 </footer>
 
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
-
-<div id="rainyun-popup" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
-  <div class="popup-content">
-    <button onclick="closePopup()" class="popup-close" aria-label="关闭弹窗">&times;</button>
-    <h3 id="popup-title" class="popup-title">服务器由雨云驱动</h3>
-    <p>本服务器运行在 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener" class="popup-link">雨云</a> 云服务器上。</p>
-    <p class="popup-desc">雨云提供高性能、低延迟的服务器托管服务，价格实惠，适合各类游戏服务器和网站部署。</p>
-    <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener" class="btn btn-popup" onclick="closePopup()">立即体验雨云</a>
-  </div>
-</div>
-
 <script>
-  function showToast(message) {
-    var toast = document.getElementById('toast');
-    toast.textContent = message;
-    toast.classList.add('is-visible');
-    clearTimeout(window.__toastTimer);
-    window.__toastTimer = setTimeout(function() { toast.classList.remove('is-visible'); }, 2200);
-  }
-  function closePopup() { document.getElementById('rainyun-popup').style.display = 'none'; }
-  window.addEventListener('load', function() {
-    setTimeout(function() { var p = document.getElementById('rainyun-popup'); if (p) p.style.display = 'flex'; }, 1500);
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function () {
+    var open = navLinks.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
-  document.getElementById('rainyun-popup').addEventListener('click', function(e) { if (e.target === this) closePopup(); });
-  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePopup(); });
+  navLinks.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      navLinks.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  (function () {
+    var items = document.querySelectorAll('[data-reveal]');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      items.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  })();
 </script>
+
+<!-- Cloudflare Pages Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0e61d4ab9ec14782a2114b907ac27452"}'></script>
 </body>
 </html>

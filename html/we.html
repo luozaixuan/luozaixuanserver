@@ -5,104 +5,234 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
 <meta name="description" content="LuozaixuanMinecraftServer - 关于我们">
-<meta name="theme-color" content="#0F0F23">
+<meta name="theme-color" content="#0A0A0B">
 <title>LuozaixuanMinecraftServer - 关于我们</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
 <a href="../index.html" class="skip-link">返回主页</a>
 
-<div class="scanlines" aria-hidden="true"></div>
-
-<header class="site-header" role="banner">
-  <div class="header-inner">
-    <a href="../index.html" class="header-badge" aria-label="返回主页">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 7h4v4H7z"/><path d="M13 7h4"/><path d="M13 11h4"/><path d="M7 15h10"/></svg>
+<!-- ===== 导航 ===== -->
+<nav class="site-nav" aria-label="主导航">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand" aria-label="LuozaixuanMinecraftServer 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+      </span>
+      <span>LMCS</span>
     </a>
-    <h1 class="glitch load-glitch" data-text="关于我们">关于我们</h1>
-    <p class="header-subtitle">About This Server</p>
-    <div class="header-glow" aria-hidden="true"></div>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="we.html" aria-current="page">关于我们</a>
+      <a href="rules.html">服务器规则</a>
+      <a href="contact.html">联系方式</a>
+      <a href="suggestions.html">建言献策</a>
+      <a href="https://qm.qq.com/q/NzYmsReNaO" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener">加入QQ群</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== 页面头部 ===== -->
+<header class="hero" role="banner">
+  <div class="container">
+    <div class="page-head">
+      <p class="page-head-kicker">About Us</p>
+      <h1 class="page-head-title">关于我们</h1>
+      <p class="page-head-subtitle">About This Server</p>
+    </div>
   </div>
 </header>
 
-<div class="container">
-  <main id="main-content">
-    <section class="about-section" aria-label="关于我们">
-      <h2>关于我们</h2>
-      <p>
-        LuozaixuanMinecraftServer 是一个致力于为玩家提供优质游戏体验的模组服务器。我们由一群热爱 Minecraft 的玩家组成，希望通过精心配置的模组，为大家带来更加丰富、有趣的游戏体验。
-      </p>
+<!-- ===== 主体 ===== -->
+<main id="main-content">
+  <div class="container container-slim">
 
-      <h3>我们的特色</h3>
-      <ul>
-        <li>精心挑选的模组，提供丰富的游戏内容</li>
-        <li>稳定的服务器运行环境</li>
-        <li>公平、友善的游戏社区</li>
-        <li>定期举办各种活动和赛事</li>
-        <li>完善的服务器管理和技术支持</li>
-      </ul>
-
-      <h3>服务器信息</h3>
-      <ul>
-        <li>服务器类型：<strong>模组服务器</strong></li>
-        <li>服务器地址：<strong>123.157.211.154:12110</strong></li>
-        <li>QQ群：<strong>915515421</strong>（加入获取客户端）</li>
-        <li>开服时间：<strong>24小时开放</strong></li>
-      </ul>
-
-      <h3>我们的愿景</h3>
-      <p>
-        我们希望打造一个充满创意和活力的 Minecraft 社区，让每一位玩家都能在这里找到属于自己的乐趣。无论是建筑、探险、战斗还是社交，我们都致力于为大家提供一个友好、公平的游戏环境。
-      </p>
-      <p>
-        感谢您对 LuozaixuanMinecraftServer 的支持和关注！
-      </p>
+    <section class="section" aria-label="关于我们">
+      <div class="card" data-reveal>
+        <div class="card-body">
+          <p>LuozaixuanMinecraftServer 是一个致力于为玩家提供优质游戏体验的<strong>模组服务器</strong>。我们由一群热爱 Minecraft 的玩家组成，希望通过精心配置的模组，为大家带来更加丰富、有趣的游戏体验。</p>
+        </div>
+      </div>
     </section>
-  </main>
-</div>
 
+    <section class="section" aria-label="我们的特色" style="margin-top:var(--space-12)">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker">Highlights</p>
+        <h2 class="section-title">我们的特色</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card" data-reveal>
+          <span class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6"/><path d="M12 19h8"/></svg>
+          </span>
+          <h3>丰富内容</h3>
+          <p>精心挑选的模组，提供丰富的游戏内容。</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </span>
+          <h3>稳定环境</h3>
+          <p>稳定的服务器运行环境。</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <h3>公平友善</h3>
+          <p>公平、友善的游戏社区。</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </span>
+          <h3>活动赛事</h3>
+          <p>定期举办各种活动和赛事。</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <h3>管理支持</h3>
+          <p>完善的服务器管理和技术支持。</p>
+        </article>
+        <article class="feature-card" data-reveal>
+          <span class="feature-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </span>
+          <h3>全天在线</h3>
+          <p>服务器 24 小时开放，随时上线随时玩。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-label="服务器信息" style="margin-top:var(--space-12)">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker">Server Info</p>
+        <h2 class="section-title">服务器信息</h2>
+      </div>
+      <div class="card" data-reveal>
+        <ul class="tick-list">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            服务器类型：<strong>模组服务器</strong>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            服务器地址：<strong>123.157.211.154:12110</strong>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            QQ群：<strong>915515421</strong>（加入获取客户端）
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            开服时间：<strong>24 小时开放</strong>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-label="我们的愿景" style="margin-top:var(--space-12)">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker">Vision</p>
+        <h2 class="section-title">我们的愿景</h2>
+      </div>
+      <div class="card" data-reveal>
+        <div class="card-body">
+          <p>我们希望打造一个充满创意和活力的 Minecraft 社区，让每一位玩家都能在这里找到属于自己的乐趣。无论是建筑、探险、战斗还是社交，我们都致力于为大家提供一个友好、公平的游戏环境。</p>
+          <p>感谢您对 LuozaixuanMinecraftServer 的支持和关注！</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="行动号召" style="margin-top:var(--space-12)">
+      <div class="cta-banner" data-reveal>
+        <h2>加入我们，开始冒险</h2>
+        <p>加入 QQ 群获取客户端，开启机械动力与飞行的全新体验。</p>
+        <div class="cta-actions">
+          <a href="https://qm.qq.com/q/NzYmsReNaO" class="btn btn-primary btn-lg" target="_blank" rel="noopener">加入QQ群</a>
+          <a href="../index.html#download" class="btn btn-secondary btn-lg">下载整合包</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ===== 页脚 ===== -->
 <footer class="site-footer" role="contentinfo">
-  <nav class="footer-nav" aria-label="页脚导航">
-    <a href="https://mc.luozaixuan.top/index.html">原版服首页</a>
-    <a href="we.html">关于我们</a>
-    <a href="rules.html">服务器规则</a>
-    <a href="contact.html">联系方式</a>
-    <a href="suggestions.html">建言献策</a>
-    <a href="http://bbs.luozaixuan.top">LuozaixuanBBS</a>
-    <a href="https://blog.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBlog</a>
-  </nav>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">LuozaixuanMinecraftServer</p>
+        <p style="color:var(--fg-muted);font-size:.92rem;max-width:320px;">机械动力 · 沉浸式飞机 · 模组服务器。愿每一位玩家都能在这里找到属于自己的乐趣。</p>
+      </div>
+      <nav class="footer-col" aria-label="站点导航">
+        <h4>站点导航</h4>
+        <ul>
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="we.html">关于我们</a></li>
+          <li><a href="rules.html">服务器规则</a></li>
+          <li><a href="contact.html">联系方式</a></li>
+          <li><a href="suggestions.html">建言献策</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="社区链接">
+        <h4>社区</h4>
+        <ul>
+          <li><a href="https://qm.qq.com/q/NzYmsReNaO" target="_blank" rel="noopener">QQ群</a></li>
+          <li><a href="http://bbs.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBBS</a></li>
+          <li><a href="https://blog.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBlog</a></li>
+          <li><a href="https://github.com/luozaixuan" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-credit">
+      <span>© <span id="year">2026</span> LuozaixuanMinecraftServer</span>
+      <span>服务器由 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener">雨云</a> 云服务驱动</span>
+    </div>
+  </div>
 </footer>
 
-<div id="toast" class="toast" role="status" aria-live="polite"></div>
-
-<div id="rainyun-popup" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
-  <div class="popup-content">
-    <button onclick="closePopup()" class="popup-close" aria-label="关闭弹窗">&times;</button>
-    <h3 id="popup-title" class="popup-title">服务器由雨云驱动</h3>
-    <p>本服务器运行在 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener" class="popup-link">雨云</a> 云服务器上。</p>
-    <p class="popup-desc">雨云提供高性能、低延迟的服务器托管服务，价格实惠，适合各类游戏服务器和网站部署。</p>
-    <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener" class="btn btn-popup" onclick="closePopup()">立即体验雨云</a>
-  </div>
-</div>
-
 <script>
-  function showToast(message) {
-    var toast = document.getElementById('toast');
-    toast.textContent = message;
-    toast.classList.add('is-visible');
-    clearTimeout(window.__toastTimer);
-    window.__toastTimer = setTimeout(function() { toast.classList.remove('is-visible'); }, 2200);
-  }
-  function closePopup() { document.getElementById('rainyun-popup').style.display = 'none'; }
-  window.addEventListener('load', function() {
-    setTimeout(function() { var p = document.getElementById('rainyun-popup'); if (p) p.style.display = 'flex'; }, 1500);
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function () {
+    var open = navLinks.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
-  document.getElementById('rainyun-popup').addEventListener('click', function(e) { if (e.target === this) closePopup(); });
-  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closePopup(); });
+  navLinks.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      navLinks.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  (function () {
+    var items = document.querySelectorAll('[data-reveal]');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      items.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  })();
 </script>
+
+<!-- Cloudflare Pages Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0e61d4ab9ec14782a2114b907ac27452"}'></script>
 </body>
 </html>

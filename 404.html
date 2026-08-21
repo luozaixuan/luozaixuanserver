@@ -1,43 +1,114 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - 页面未找到</title>
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A0A0B">
+<title>404 - 页面未找到 | LuozaixuanMinecraftServer</title>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>LuozaixuanMinecraftServer</h1>
-        <h2>纯净生存服务器</h2>
-    </header>
 
-    <div class="container">
-        <main>
-            <div class="error-container">
-                <h1>404</h1>
-                <p>抱歉，您访问的页面不存在。</p>
-                <p>可能的原因：</p>
-                <ul>
-                    <li>页面地址输入错误</li>
-                    <li>页面已被移动或删除</li>
-                    <li>链接已失效</li>
-                </ul>
-                <button onclick="window.location.href='/index.html'">返回首页</button>
-            </div>
-        </main>
+<a href="index.html" class="skip-link">返回主页</a>
+
+<!-- ===== 导航 ===== -->
+<nav class="site-nav" aria-label="主导航">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand" aria-label="LuozaixuanMinecraftServer 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+      </span>
+      <span>LMCS</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="html/we.html">关于我们</a>
+      <a href="html/rules.html">服务器规则</a>
+      <a href="html/contact.html">联系方式</a>
+      <a href="html/suggestions.html">建言献策</a>
+      <a href="https://qm.qq.com/q/NzYmsReNaO" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener">加入QQ群</a>
     </div>
+  </div>
+</nav>
 
-    <footer>
-        <nav>
-            <a href="https://mc.luozaixuan.top/index.html">原版服首页</a>
-            <a href="https://modmc.luozaixuan.top/">模组服首页</a>
-            <a href="https://mc.luozaixuan.top/html/we.html">关于我们</a>
-            <a href="https://mc.luozaixuan.top/html/rules.html">服务器规则</a>
-            <a href="https://mc.luozaixuan.top/html/contact.html">联系方式</a>
-            <a href="https://mc.luozaixuan.top/html/suggestions.html">建言献策</a>
-            <a href="http://bbs.luozaixuan.top">LuozaixuanBBS</a>
-        </nav>
-    </footer>
+<!-- ===== 404 ===== -->
+<main id="main-content">
+  <div class="container">
+    <div class="error-page" role="alert">
+      <div class="error-code" aria-hidden="true">
+        4<span class="error-zero">0</span>4
+      </div>
+      <h1 class="error-title">页面未找到</h1>
+      <p class="error-text">抱歉，您访问的页面不存在或已被移动。可能的原因：</p>
+      <ul class="error-list">
+        <li>页面地址输入错误</li>
+        <li>页面已被移动或删除</li>
+        <li>链接已失效</li>
+      </ul>
+      <div class="error-actions">
+        <a href="index.html" class="btn btn-primary btn-lg">返回首页</a>
+        <a href="html/suggestions.html" class="btn btn-secondary btn-lg">留言反馈</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">LuozaixuanMinecraftServer</p>
+        <p style="color:var(--fg-muted);font-size:.92rem;max-width:320px;">机械动力 · 沉浸式飞机 · 模组服务器。愿每一位玩家都能在这里找到属于自己的乐趣。</p>
+      </div>
+      <nav class="footer-col" aria-label="站点导航">
+        <h4>站点导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="html/we.html">关于我们</a></li>
+          <li><a href="html/rules.html">服务器规则</a></li>
+          <li><a href="html/contact.html">联系方式</a></li>
+          <li><a href="html/suggestions.html">建言献策</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="社区链接">
+        <h4>社区</h4>
+        <ul>
+          <li><a href="https://qm.qq.com/q/NzYmsReNaO" target="_blank" rel="noopener">QQ群</a></li>
+          <li><a href="http://bbs.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBBS</a></li>
+          <li><a href="https://blog.luozaixuan.top" target="_blank" rel="noopener">LuozaixuanBlog</a></li>
+          <li><a href="https://github.com/luozaixuan" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-credit">
+      <span>© <span id="year">2026</span> LuozaixuanMinecraftServer</span>
+      <span>服务器由 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener">雨云</a> 云服务驱动</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function () {
+    var open = navLinks.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navLinks.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      navLinks.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+
+<!-- Cloudflare Pages Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0e61d4ab9ec14782a2114b907ac27452"}'></script>
 </body>
 </html>

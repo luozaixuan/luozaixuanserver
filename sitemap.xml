@@ -25,12 +25,6 @@
   </url>
 
   <url>
-    <loc>https://mc.luozaixuan.top/html/site5.html</loc>
-    <priority>0.80</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
     <loc>https://mc.luozaixuan.top/html/suggestions.html</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
