@@ -467,10 +467,10 @@ main {
 }
 
 .hero-inner {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: var(--space-10);
   align-items: center;
-  text-align: center;
 }
 
 .hero-kicker {
@@ -567,7 +567,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: var(--space-8);
 }
 
@@ -575,7 +575,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: var(--space-10);
 }
 
@@ -593,6 +593,18 @@ main {
 
 .hero-meta-item svg {
   color: var(--primary);
+}
+
+/* Hero visual — demo video */
+.hero-visual video {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
 }
 
 /* ---------- Cards ---------- */
@@ -1265,6 +1277,10 @@ main {
   .feature-grid,
   .steps {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
   }
 }
 
