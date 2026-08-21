@@ -654,12 +654,12 @@ main {
   font-weight: 600;
 }
 
-.card-body a {
+.card-body a:not(.btn) {
   color: var(--primary);
   text-decoration: none;
 }
 
-.card-body a:hover {
+.card-body a:not(.btn):hover {
   text-decoration: underline;
 }
 
