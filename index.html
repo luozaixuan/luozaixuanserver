@@ -13,8 +13,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/home.css">
 </head>
-<body>
+<body class="home-page">
 
 <a href="#main-content" class="skip-link">跳到主要内容</a>
 
@@ -24,7 +25,7 @@
     <a href="index.html" class="nav-brand" aria-label="LuozaixuanMinecraftServer 首页">
       <span>LMCS</span>
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
     </button>
     <div class="nav-links" id="navLinks">
@@ -55,8 +56,8 @@
       <div class="hero-address">
         <div class="address-chip">
           <span class="address-label">服务器地址</span>
-          <code id="serverAddress">123.157.211.154:12110</code>
-          <button class="btn btn-secondary btn-sm" onclick="copyServerAddress()" aria-label="复制服务器地址">
+          <code id="serverAddress" data-server-address>123.157.211.154:12110</code>
+          <button type="button" class="btn btn-secondary btn-sm" data-copy-server-address aria-label="复制服务器地址">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
             复制
           </button>
@@ -70,7 +71,7 @@
         </a>
         <a href="https://github.com/luozaixuan/HMCL-for-LMCS/releases" class="btn btn-secondary btn-lg" target="_blank" rel="noopener">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          了解HMCL-for-LMCS
+          一键安装客户端
         </a>
       </div>
 
@@ -90,7 +91,8 @@
       </ul>
     </div>
     <div class="hero-visual">
-      <video src="yanshi.mp4" controls autoplay muted playsinline preload="auto" aria-label="服务器演示视频"></video>
+      <video src="yanshi.mp4" controls autoplay muted playsinline preload="metadata" aria-label="服务器演示视频"></video>
+      <p class="video-caption">服务器实机演示 · 点击播放控件可暂停或全屏查看</p>
     </div>
     </div>
   </div>
@@ -125,18 +127,18 @@
           </div>
         </article>
 
-        <article class="notice notice--danger" data-reveal>
+        <article class="notice notice--danger notice--archive" data-reveal>
           <div class="notice-header">
             <span class="notice-icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
             </span>
-            <h3>服务器周目变更通知</h3>
+            <h3>历史周目存档</h3>
           </div>
+          <p class="notice-desc">以下内容对应 2026 年 1 月周目，当前仅作为历史存档提供。</p>
           <ul class="notice-list">
-            <li>该周目将关闭，<strong>2026年1月17日15:00后</strong>的数据可能不会保存。</li>
-            <li>服务器将于<strong>1月18日</strong>停止服务。</li>
-            <li>新周目将于<strong>2月5日</strong>启动。</li>
-            <li>自<strong>1月18日</strong>起，可下载本周目存档。</li>
+            <li>该周目已于 <strong>2026 年 1 月 18 日</strong>停止服务。</li>
+            <li>新周目已于 <strong>2026 年 2 月 5 日</strong>启动。</li>
+            <li>本周目存档可通过下方链接下载。</li>
           </ul>
           <div class="notice-actions">
             <a href="https://www.123865.com/s/xf7RVv-9o1Kd" class="btn btn-danger btn-sm" target="_blank" rel="noopener">下载存档 (123云盘)</a>
@@ -238,23 +240,23 @@
           <span class="step-num" aria-hidden="true">1</span>
           <h3>安装或更新客户端</h3>
           <p>使用 HMCL-for-LMCS 一键下载安装，或下载整合包后解压运行。</p>
-          <a href="#download" class="btn btn-primary btn-sm" style="margin-top:var(--space-4)">下载客户端</a>
+          <a href="#download" class="btn btn-primary btn-sm step-action">下载客户端</a>
         </div>
         <div class="step" data-reveal>
           <span class="step-num" aria-hidden="true">2</span>
           <h3>输入地址进入游戏</h3>
-          <p>在多人游戏中添加服务器地址 <strong>123.157.211.154:12110</strong>，即可进入服务器。</p>
-          <button class="btn btn-secondary btn-sm" style="margin-top:var(--space-4)" onclick="copyServerAddress()">复制服务器地址</button>
+          <p>在多人游戏中添加服务器地址 <strong data-server-address>123.157.211.154:12110</strong>，即可进入服务器。</p>
+          <button type="button" class="btn btn-secondary btn-sm step-action" data-copy-server-address>复制服务器地址</button>
         </div>
         <div class="step" data-reveal>
           <span class="step-num" aria-hidden="true">3</span>
           <h3>加入QQ群与其他玩家联系</h3>
-          <p>群号 <strong>915515421</strong>，加入 QQ 群与其他玩家联系，获取最新资讯与社区动态。</p>
-          <a href="https://qm.qq.com/q/NzYmsReNaO" class="btn btn-secondary btn-sm" style="margin-top:var(--space-4)" target="_blank" rel="noopener">加入QQ群</a>
+          <p>群号 <strong data-qq-group>915515421</strong>，加入 QQ 群与其他玩家联系，获取最新资讯与社区动态。</p>
+          <a href="https://qm.qq.com/q/NzYmsReNaO" class="btn btn-secondary btn-sm step-action" target="_blank" rel="noopener">加入QQ群</a>
         </div>
       </div>
 
-      <div class="warning-bar" style="margin-top:var(--space-6)" data-reveal>
+      <div class="warning-bar join-warning" data-reveal>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
         <span>如果离线用户加入服务器提示无效会话，请换一个名字确保不要和正版用户重名，并不要使用 5 个字以内的 ID。</span>
       </div>
@@ -266,6 +268,7 @@
         <p class="section-kicker">Download</p>
         <h2 class="section-title">整合包下载</h2>
         <p class="section-desc">提供两种格式的整合包，选择适合自己的方式下载即可。</p>
+        <p class="download-version" aria-live="polite">当前版本 <strong id="releaseVersion">v1.7</strong><span id="releaseStatus">正在检查最新版本…</span></p>
       </div>
 
       <div class="info-grid">
@@ -276,7 +279,7 @@
             </span>
             <h3>Modrinth 格式</h3>
           </div>
-          <p class="card-body" style="margin-bottom:var(--space-4)">适用于 Modrinth 等第三方启动器。</p>
+          <p class="card-body card-description">适用于 Modrinth 等第三方启动器。</p>
           <div class="btn-group">
             <a href="https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.mrpack" class="btn btn-primary dl-link" data-base="https://github.com/luozaixuan/mcserverclient/releases/download/" data-file="LMCServer.mrpack" target="_blank" rel="noopener">下载 (GitHub)</a>
             <a href="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.mrpack" class="btn btn-secondary dl-link-mirror" data-base="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/" data-file="LMCServer.mrpack" target="_blank" rel="noopener">下载 (镜像)</a>
@@ -290,7 +293,7 @@
             </span>
             <h3>MCBBS 格式</h3>
           </div>
-          <p class="card-body" style="margin-bottom:var(--space-4)">适合传统启动器，解压后导入即可。</p>
+          <p class="card-body card-description">适合传统启动器，解压后导入即可。</p>
           <div class="btn-group">
             <a href="https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.zip" class="btn btn-primary dl-link" data-base="https://github.com/luozaixuan/mcserverclient/releases/download/" data-file="LMCServer.zip" target="_blank" rel="noopener">下载 (GitHub)</a>
             <a href="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/v1.7/LMCServer.zip" class="btn btn-secondary dl-link-mirror" data-base="https://github.luozaixuan.top/https://github.com/luozaixuan/mcserverclient/releases/download/" data-file="LMCServer.zip" target="_blank" rel="noopener">下载 (镜像)</a>
@@ -385,7 +388,7 @@
     <div class="footer-grid">
       <div>
         <p class="footer-brand">LuozaixuanMinecraftServer</p>
-        <p style="color:var(--fg-muted);font-size:.92rem;max-width:320px;">机械动力 · 沉浸式飞机 · 模组服务器。愿每一位玩家都能在这里找到属于自己的乐趣。</p>
+        <p class="footer-description">机械动力 · 沉浸式飞机 · 模组服务器。愿每一位玩家都能在这里找到属于自己的乐趣。</p>
       </div>
       <nav class="footer-col" aria-label="站点导航">
         <h4>站点导航</h4>
@@ -417,111 +420,7 @@
 <!-- Toast -->
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-<script>
-  // 复制服务器地址（替换原生 alert）
-  function showToast(message) {
-    var toast = document.getElementById('toast');
-    toast.textContent = message;
-    toast.classList.add('is-visible');
-    clearTimeout(window.__toastTimer);
-    window.__toastTimer = setTimeout(function () {
-      toast.classList.remove('is-visible');
-    }, 2200);
-  }
-
-  function copyServerAddress() {
-    var addr = document.getElementById('serverAddress').innerText.trim();
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(addr).then(function () {
-        showToast('✓ 服务器地址已复制');
-      }).catch(function () {
-        fallbackCopy(addr);
-      });
-    } else {
-      fallbackCopy(addr);
-    }
-  }
-
-  function fallbackCopy(text) {
-    var ta = document.createElement('textarea');
-    ta.value = text;
-    ta.style.position = 'fixed';
-    ta.style.opacity = '0';
-    document.body.appendChild(ta);
-    ta.select();
-    try {
-      document.execCommand('copy');
-      showToast('✓ 服务器地址已复制');
-    } catch (e) {
-      showToast('✗ 复制失败，请手动复制');
-    }
-    document.body.removeChild(ta);
-  }
-
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // 移动端导航
-  var navToggle = document.getElementById('navToggle');
-  var navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', function () {
-    var open = navLinks.classList.toggle('is-open');
-    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  navLinks.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
-      navLinks.classList.remove('is-open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    }
-  });
-
-  // 滚动渐显动画
-  (function () {
-    var items = document.querySelectorAll('[data-reveal]');
-    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      items.forEach(function (el) { el.classList.add('is-visible'); });
-      return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    items.forEach(function (el) { io.observe(el); });
-  })();
-
-  // 从 GitHub API 拉取最新 release 版本号并更新下载链接
-  (function () {
-    var API_URL = 'https://api.github.com/repos/luozaixuan/mcserverclient/releases/latest';
-    var FALLBACK_TAG = 'v1.7';
-    var dlLinks = document.querySelectorAll('.dl-link');
-    var dlMirrorLinks = document.querySelectorAll('.dl-link-mirror');
-
-    function updateLinks(tag) {
-      dlLinks.forEach(function (el) {
-        el.href = el.getAttribute('data-base') + tag + '/' + el.getAttribute('data-file');
-      });
-      dlMirrorLinks.forEach(function (el) {
-        el.href = el.getAttribute('data-base') + tag + '/' + el.getAttribute('data-file');
-      });
-    }
-
-    fetch(API_URL, { cache: 'no-store' })
-      .then(function (res) {
-        if (!res.ok) throw new Error('API error');
-        return res.json();
-      })
-      .then(function (data) {
-        var tag = data.tag_name;
-        if (tag) updateLinks(tag);
-      })
-      .catch(function () {
-        updateLinks(FALLBACK_TAG);
-      });
-  })();
-</script>
+<script src="js/site.js" defer></script>
 
 <!-- Cloudflare Pages Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0e61d4ab9ec14782a2114b907ac27452"}'></script>

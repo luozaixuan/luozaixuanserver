@@ -1,0 +1,71 @@
+/* Homepage-only refinements. Shared components stay in styles.css. */
+
+.home-page .video-caption {
+  margin-top: var(--space-3);
+  color: var(--fg-dim);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.home-page .download-version {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  color: var(--fg-dim);
+  font-size: 0.82rem;
+}
+
+.home-page .section-title {
+  overflow-wrap: anywhere;
+}
+
+.home-page .download-version strong {
+  color: var(--fg);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.home-page #releaseStatus {
+  color: var(--fg-dim);
+  font-size: 0.76rem;
+}
+
+.home-page .step-action {
+  margin-top: var(--space-4);
+}
+
+.home-page .join-warning {
+  margin-top: var(--space-6);
+}
+
+.home-page .card-description {
+  margin-bottom: var(--space-4);
+}
+
+.home-page .footer-description {
+  max-width: 320px;
+  color: var(--fg-muted);
+  font-size: 0.92rem;
+}
+
+.home-page .notice--archive {
+  border-color: rgba(245, 179, 1, 0.26);
+}
+
+.home-page .notice--archive .notice-desc {
+  color: var(--fg-muted);
+}
+
+@media (max-width: 800px) {
+  .home-page .nav-links {
+    top: 76px;
+  }
+}
+
+@media (max-width: 520px) {
+  .home-page .download-version {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
