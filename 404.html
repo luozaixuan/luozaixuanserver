@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#030711">
+<meta name="theme-color" content="#FFFFFF">
 <title>404 - 页面未找到 | LuozaixuanMinecraftServer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -62,7 +62,7 @@
     <div class="footer-grid">
       <div>
         <p class="footer-brand">LuozaixuanMinecraftServer</p>
-        <p style="color:var(--fg-muted);font-size:.92rem;max-width:320px;">机械动力 · 沉浸式飞机 · 模组服务器。整合包装好就能玩。</p>
+        <p class="footer-description">机械动力 · 沉浸式飞机 · 模组服务器。整合包装好就能玩。</p>
       </div>
       <nav class="footer-col" aria-label="站点导航">
         <h4>站点导航</h4>
@@ -84,6 +84,20 @@
         </ul>
       </nav>
     </div>
+    <dl class="colophon">
+      <div class="colophon-item">
+        <dt>字体 Type</dt>
+        <dd>IBM Plex Sans · IBM Plex Mono · Noto Sans SC</dd>
+      </div>
+      <div class="colophon-item">
+        <dt>网格 Grid</dt>
+        <dd>12 栏 · 1160px · 24px 栏距</dd>
+      </div>
+      <div class="colophon-item">
+        <dt>用色 Colour</dt>
+        <dd><span class="swatch" aria-hidden="true"></span>#E30613 · #000000 · #FFFFFF</dd>
+      </div>
+    </dl>
     <div class="footer-credit">
       <span>© <span id="year">2026</span> LuozaixuanMinecraftServer</span>
       <span>服务器由 <a href="https://www.rainyun.com/luozx_" target="_blank" rel="noopener">雨云</a> 云服务驱动</span>
@@ -91,22 +105,7 @@
   </div>
 </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  var navToggle = document.getElementById('navToggle');
-  var navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', function () {
-    var open = navLinks.classList.toggle('is-open');
-    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  navLinks.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
-      navLinks.classList.remove('is-open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    }
-  });
-</script>
+<script src="js/site.js" defer></script>
 
 <!-- Cloudflare Pages Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0e61d4ab9ec14782a2114b907ac27452"}'></script>

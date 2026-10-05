@@ -74,6 +74,10 @@
     });
   }
 
+  // Keep in step with the responsive breakpoint in css/styles.css
+  var NAV_BREAKPOINT = 860;
+  var navIsOverlay = window.matchMedia('(max-width: ' + NAV_BREAKPOINT + 'px)');
+
   function setupNavigation() {
     var navToggle = document.getElementById('navToggle');
     var navLinks = document.getElementById('navLinks');
@@ -95,7 +99,7 @@
     });
 
     document.addEventListener('click', function (event) {
-      if (window.innerWidth <= 800 && navLinks.classList.contains('is-open') &&
+      if (navIsOverlay.matches && navLinks.classList.contains('is-open') &&
           !navLinks.contains(event.target) && !navToggle.contains(event.target)) {
         setOpen(false);
       }
@@ -105,9 +109,15 @@
       if (event.key === 'Escape') setOpen(false);
     });
 
-    window.addEventListener('resize', function () {
-      if (window.innerWidth > 800) setOpen(false);
-    });
+    // Leaving the overlay range closes the panel, wherever the resize came from
+    var onBreakpointChange = function (event) {
+      if (!event.matches) setOpen(false);
+    };
+    if (navIsOverlay.addEventListener) {
+      navIsOverlay.addEventListener('change', onBreakpointChange);
+    } else if (navIsOverlay.addListener) {
+      navIsOverlay.addListener(onBreakpointChange);
+    }
   }
 
   function setupReveal() {
@@ -185,6 +195,17 @@
       });
   }
 
+  // Typing #grid in the URL lays the twelve tracks over the page,
+  // so the system can be inspected rather than taken on trust.
+  function setupGridOverlay() {
+    function sync() {
+      var wantsGrid = window.location.hash.replace('#', '') === 'grid';
+      document.body.classList.toggle('grid-visible', wantsGrid);
+    }
+    sync();
+    window.addEventListener('hashchange', sync);
+  }
+
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
   syncConfig();
@@ -192,4 +213,5 @@
   setupNavigation();
   setupReveal();
   setupReleaseLinks();
+  setupGridOverlay();
 })();

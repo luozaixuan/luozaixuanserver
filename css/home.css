@@ -1,71 +1,107 @@
-/* Homepage-only refinements. Shared components stay in styles.css. */
+/* ============================================================
+   Homepage-only refinements.
+   Shared Swiss design system lives in styles.css.
+   ============================================================ */
 
+/* ---------- Hero video caption — a plate caption, set in mono ---------- */
 .home-page .video-caption {
   margin-top: var(--space-3);
+  padding-left: var(--space-3);
+  border-left: 2px solid var(--primary);
   color: var(--fg-dim);
-  font-size: 0.78rem;
-  text-align: center;
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-align: left;
+  max-width: 52ch;
 }
 
+/* ---------- Download version readout — tabular data ---------- */
 .home-page .download-version {
   display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  margin-top: var(--space-3);
-  color: var(--fg-dim);
-  font-size: 0.82rem;
-}
-
-.home-page .section-title {
-  overflow-wrap: anywhere;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--rule-soft);
+  color: var(--fg-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .home-page .download-version strong {
   color: var(--fg);
   font-family: var(--font-mono);
   font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
 }
 
 .home-page #releaseStatus {
   color: var(--fg-dim);
-  font-size: 0.76rem;
+  font-size: var(--fs-micro);
 }
 
+/* The readout sits in the section head's second row, under the lead */
+.home-page .section-desc + .download-version {
+  grid-column: 3 / span 8;
+  grid-row: 3;
+  margin-top: var(--space-5);
+}
+
+/* ---------- Long titles must not overflow the grid ---------- */
+.home-page .section-title {
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Steps ---------- */
 .home-page .step-action {
-  margin-top: var(--space-4);
+  margin-top: var(--space-5);
 }
 
 .home-page .join-warning {
-  margin-top: var(--space-6);
+  margin-top: var(--space-8);
 }
 
+/* ---------- Download cards ---------- */
 .home-page .card-description {
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-5);
 }
 
-.home-page .footer-description {
-  max-width: 320px;
-  color: var(--fg-muted);
-  font-size: 0.92rem;
+/* ---------- Archived notice: flagged in ink, not a third colour ---------- */
+.home-page .notice--archive::before {
+  background: var(--fg);
 }
 
-.home-page .notice--archive {
-  border-color: rgba(245, 179, 1, 0.26);
+/* ---------- Notices stretch to the tallest cell on the row ---------- */
+.home-page .info-grid .notice,
+.home-page .info-grid .card {
+  height: 100%;
 }
 
-.home-page .notice--archive .notice-desc {
-  color: var(--fg-muted);
+.home-page .notice {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 800px) {
-  .home-page .nav-links {
-    top: 76px;
-  }
+.home-page .notice-desc {
+  flex: 0 0 auto;
 }
 
-@media (max-width: 520px) {
-  .home-page .download-version {
-    flex-wrap: wrap;
-    justify-content: center;
+.home-page .notice-actions {
+  margin-top: auto;
+  padding-top: var(--space-4);
+}
+
+@media (max-width: 860px) {
+  /* The readout folds back into the single track with the rest of the head */
+  .home-page .section-desc + .download-version {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: var(--space-4);
   }
 }
