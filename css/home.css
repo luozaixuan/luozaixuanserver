@@ -3,20 +3,6 @@
    Shared Swiss design system lives in styles.css.
    ============================================================ */
 
-/* ---------- Hero video caption — a plate caption, set in mono ---------- */
-.home-page .video-caption {
-  margin-top: var(--space-3);
-  padding-left: var(--space-3);
-  border-left: 2px solid var(--primary);
-  color: var(--fg-dim);
-  font-family: var(--font-mono);
-  font-size: var(--fs-micro);
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-align: left;
-  max-width: 52ch;
-}
-
 /* ---------- Download version readout — tabular data ---------- */
 .home-page .download-version {
   display: inline-flex;

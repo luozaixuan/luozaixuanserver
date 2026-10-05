@@ -544,11 +544,7 @@ main > .container > * + .section {
 }
 
 .hero-content {
-  grid-column: 1 / span 7;
-}
-
-.hero-visual {
-  grid-column: 8 / span 5;
+  grid-column: 1 / span 8;
 }
 
 .hero-title {
@@ -701,17 +697,43 @@ main > .container > * + .section {
   color: var(--primary);
 }
 
-/* ---------- Hero visual: framed plate ---------- */
-.hero-visual video {
+/* ---------- Media plate: a framed figure that carries its own caption ---------- */
+.video-plate {
+  grid-column: 1 / span 8;
+  margin-top: var(--space-10);
+  min-width: 0;
+}
+
+.video-plate video {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 10;
-  max-height: 440px;
   object-fit: contain;
   border: 1px solid var(--rule);
   border-radius: 0;
   background: var(--ink-plate);
   box-shadow: none;
+}
+
+/* The caption is set in mono so it reads as a plate note, not body copy */
+.video-caption {
+  margin-top: var(--space-3);
+  padding-left: var(--space-3);
+  border-left: 2px solid var(--primary);
+  color: var(--fg-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  text-align: left;
+  max-width: 52ch;
+}
+
+.video-caption-hint {
+  display: block;
+  color: var(--fg-dim);
+  letter-spacing: 0.04em;
 }
 
 /* ============================================================
@@ -1937,12 +1959,8 @@ body.grid-visible::before {
    ============================================================ */
 @media (max-width: 1024px) {
   .hero-content,
-  .hero-visual {
+  .video-plate {
     grid-column: 1 / -1;
-  }
-
-  .hero-visual {
-    margin-top: var(--space-10);
   }
 
   .feature-card,
@@ -2035,7 +2053,7 @@ body.grid-visible::before {
   }
 
   .hero-content,
-  .hero-visual,
+  .video-plate,
   .section-kicker,
   .section-title,
   .section-desc,
@@ -2065,10 +2083,14 @@ body.grid-visible::before {
     margin-top: 0;
   }
 
-  .section-title,
-  .page-head-title,
+  /* Fold back into source order: kicker, title, lead — a sticky grid-row
+     from the wide layout would otherwise pull the lead above the title. */
   .section-kicker,
-  .page-head-kicker {
+  .section-title,
+  .section-desc,
+  .page-head-kicker,
+  .page-head-title,
+  .page-head-subtitle {
     grid-row: auto;
   }
 
@@ -2202,7 +2224,7 @@ body.grid-visible::before {
   }
 
   .site-nav,
-  .hero-visual,
+  .video-plate,
   .skip-link,
   .toast,
   .btn,
