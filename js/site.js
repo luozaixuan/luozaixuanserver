@@ -74,7 +74,7 @@
     });
   }
 
-  // Keep in step with the responsive breakpoint in css/styles.css
+  // Keep in step with the responsive breakpoint in assets/css/styles.css
   var NAV_BREAKPOINT = 860;
   var navIsOverlay = window.matchMedia('(max-width: ' + NAV_BREAKPOINT + 'px)');
 
