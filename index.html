@@ -236,7 +236,7 @@
           <span class="step-num" aria-hidden="true">01</span>
           <h3>安装或更新客户端</h3>
           <p>用 HMCL-for-LMCS 一键安装，或下整合包解压。装好点启动就行。</p>
-          <a href="#download" class="btn btn-primary btn-sm step-action">下载客户端</a>
+          <a href="#launcher" class="btn btn-primary btn-sm step-action">下载客户端</a>
         </div>
         <div class="step" data-reveal>
           <span class="step-num" aria-hidden="true">02</span>
@@ -258,12 +258,59 @@
       </div>
     </section>
 
+    <!-- HMCL-for-LMCS -->
+    <section class="section" id="launcher" aria-label="HMCL-for-LMCS 启动器">
+      <div class="section-head" data-reveal>
+        <p class="section-kicker">05 — Launcher</p>
+        <h2 class="section-title">HMCL-for-LMCS</h2>
+        <p class="section-desc">在 HMCL 上加的一层：装整合包、更新、启动都点一下就行。</p>
+      </div>
+
+      <figure class="video-plate" data-reveal>
+        <video src="yanshi.mp4" controls muted playsinline preload="metadata" aria-label="演示用 HMCL-for-LMCS 一键安装整合包并启动游戏的视频"></video>
+        <figcaption class="video-caption">
+          录屏：安装 LMCServer 客户端、更新到新版、启动游戏
+          <span class="video-caption-hint">播放控件可暂停或全屏</span>
+        </figcaption>
+      </figure>
+
+      <article class="card launcher-panel" data-reveal>
+        <div class="card-header">
+          <span class="card-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </span>
+          <h3>它替你做的三件事</h3>
+        </div>
+        <ul class="tick-list">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            <span><strong>安装</strong>：下载完自动装好整合包，不用自己挑版本、拖文件。</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            <span><strong>更新</strong>：新版本发布后点一下就更到最新，不用重新下整合包。</span>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            <span><strong>启动</strong>：装好点启动就能进服，配置文件不用动。</span>
+          </li>
+        </ul>
+        <div class="btn-group">
+          <a href="https://github.com/luozaixuan/HMCL-for-LMCS/releases" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            下载 HMCL-for-LMCS
+          </a>
+          <a href="https://github.com/luozaixuan/HMCL-for-LMCS" class="btn btn-secondary btn-lg" target="_blank" rel="noopener">查看项目</a>
+        </div>
+      </article>
+    </section>
+
     <!-- 整合包下载 -->
     <section class="section" id="download" aria-label="整合包下载">
       <div class="section-head" data-reveal>
-        <p class="section-kicker">05 — Download</p>
+        <p class="section-kicker">06 — Download</p>
         <h2 class="section-title">整合包下载</h2>
-        <p class="section-desc">两种打包格式，按你的启动器选。</p>
+        <p class="section-desc">不想用启动器，就按你的启动器挑一种打包格式。</p>
         <p class="download-version" aria-live="polite">当前版本 <strong id="releaseVersion">v1.7</strong><span id="releaseStatus">正在检查最新版本…</span></p>
       </div>
 
@@ -296,20 +343,12 @@
           </div>
         </article>
       </div>
-
-      <figure class="video-plate" data-reveal>
-        <video src="yanshi.mp4" controls muted playsinline preload="metadata" aria-label="演示用 HMCL-for-LMCS 一键安装整合包并启动游戏的视频"></video>
-        <figcaption class="video-caption">
-          装好之后怎么启动：用 HMCL-for-LMCS 一键安装整合包并进入游戏
-          <span class="video-caption-hint">播放控件可暂停或全屏</span>
-        </figcaption>
-      </figure>
     </section>
 
     <!-- 常见问题 -->
     <section class="section" aria-label="常见问题">
       <div class="section-head" data-reveal>
-        <p class="section-kicker">06 — FAQ</p>
+        <p class="section-kicker">07 — FAQ</p>
         <h2 class="section-title">常见问题</h2>
         <p class="section-desc">进服和装客户端遇到的大多数问题，看这里。</p>
       </div>
@@ -333,7 +372,7 @@
             <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="faq-answer">
-            <p>推荐 <strong>HMCL-for-LMCS</strong>：点一下就装，以后更新也一键。用整合包就下 <strong>Modrinth</strong> 或 <strong>MCBBS</strong> 格式，解压导入。</p>
+            <p>推荐 <strong><a href="#launcher">HMCL-for-LMCS</a></strong>：点一下就装，以后更新也一键。用整合包就下 <strong>Modrinth</strong> 或 <strong>MCBBS</strong> 格式，解压导入。</p>
           </div>
         </details>
 
@@ -375,7 +414,7 @@
     <!-- 社区 -->
     <section class="section" aria-label="博客与社区">
       <div class="section-head" data-reveal>
-        <p class="section-kicker">07 — Community</p>
+        <p class="section-kicker">08 — Community</p>
         <h2 class="section-title">博客与社区</h2>
         <p class="section-desc">更新日志、周目计划、服主的想法都在博客里。BBS 论坛可以吹水，也能提需求。</p>
       </div>

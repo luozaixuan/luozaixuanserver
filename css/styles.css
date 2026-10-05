@@ -495,6 +495,8 @@ main > .container > * + .section {
   color: var(--fg-muted);
   font-size: var(--fs-lead);
   line-height: 1.65;
+  /* A two-line lead splits evenly instead of leaving three characters alone */
+  text-wrap: balance;
 }
 
 /* ---------- Subpage head — the same masthead, with the rule as its floor ---------- */
@@ -523,6 +525,7 @@ main > .container > * + .section {
   color: var(--fg-muted);
   font-size: var(--fs-lead);
   line-height: 1.6;
+  text-wrap: balance;
 }
 
 /* ============================================================
@@ -699,8 +702,7 @@ main > .container > * + .section {
 
 /* ---------- Media plate: a framed figure that carries its own caption ---------- */
 .video-plate {
-  grid-column: 1 / span 8;
-  margin-top: var(--space-10);
+  grid-column: 1 / span 7;
   min-width: 0;
 }
 
@@ -734,6 +736,24 @@ main > .container > * + .section {
   display: block;
   color: var(--fg-dim);
   letter-spacing: 0.04em;
+}
+
+/* The plate's companion: a ruled panel whose actions sit on the floor of the card,
+   so it lines up with the bottom edge of the video beside it. */
+.launcher-panel {
+  grid-column: 8 / span 5;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.launcher-panel .tick-list {
+  max-width: none;
+}
+
+.launcher-panel .btn-group {
+  margin-top: auto;
+  padding-top: var(--space-6);
 }
 
 /* ============================================================
@@ -1959,8 +1979,13 @@ body.grid-visible::before {
    ============================================================ */
 @media (max-width: 1024px) {
   .hero-content,
-  .video-plate {
+  .video-plate,
+  .launcher-panel {
     grid-column: 1 / -1;
+  }
+
+  .launcher-panel {
+    margin-top: var(--space-10);
   }
 
   .feature-card,
@@ -2054,6 +2079,7 @@ body.grid-visible::before {
 
   .hero-content,
   .video-plate,
+  .launcher-panel,
   .section-kicker,
   .section-title,
   .section-desc,
