@@ -38,7 +38,7 @@
       copied = false;
     }
     document.body.removeChild(textarea);
-    showToast(copied ? '✓ 服务器地址已复制' : '✗ 复制失败，请手动复制');
+    showToast(copied ? '服务器地址已复制' : '复制失败，请手动选择并复制地址');
   }
 
   function copyServerAddress() {
@@ -48,7 +48,7 @@
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function () {
-        showToast('✓ 服务器地址已复制');
+        showToast('服务器地址已复制');
       }).catch(function () {
         fallbackCopy(text);
       });
@@ -161,10 +161,10 @@
       if (version) version.textContent = safeTag;
       if (status) {
         status.textContent = source === 'api'
-          ? '已同步最新版本'
+          ? '已找到最新版本'
           : source === 'initial'
-            ? '链接已就绪，正在检查更新'
-            : '在线检查失败，已使用备用版本';
+            ? '正在检查更新，当前下载链接已就绪'
+            : '暂时查不到新版本，先按当前版本提供下载';
       }
     }
 
